@@ -1,0 +1,5 @@
+Run the Monthly Financial Review Skill using the two attached finance files.
+
+Use the active Project instructions as company context. Guide me through the review checkpoints. For each checkpoint, show only the data needed to answer the question, then ask the multiple-choice question and the free-text context question.
+
+After the review cycles are complete, produce the final Monthly Financial Review deck as a standalone HTML file using the company style from the Project instructions where available.

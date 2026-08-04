@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Born2Cycle — CFO Monthly Snapshot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0B1F2A;            /* deep petrol-navy */
+    --ink-2:#173340;
+    --canvas:#F1F4F3;         /* cool off-white */
+    --surface:#FFFFFF;
+    --border:#E1E7E6;
+    --border-strong:#CBD5D3;
+    --petrol:#0E6E78;         /* structural accent */
+    --petrol-soft:#e0f0f1;
+    --hivis:#C4F135;          /* cycling hi-vis — used sparingly */
+    --fav:#16876A;            /* emerald */
+    --fav-soft:#e5f3ee;
+    --unfav:#D14343;          /* red */
+    --unfav-soft:#f8e7e7;
+    --amber:#DB8A1C;
+    --amber-soft:#fbefdc;
+    --muted:#6C7E7C;
+    --muted-2:#95A3A1;
+    --grid:#EDF1F0;
+    --shadow:0 1px 2px rgba(11,31,42,.04), 0 6px 22px rgba(11,31,42,.05);
+    --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+    --disp:'Space Grotesk',system-ui,-apple-system,Segoe UI,sans-serif;
+    --body:'Inter',system-ui,-apple-system,Segoe UI,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--canvas);color:var(--ink);
+    font-family:var(--body);font-size:14px;line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1280px;margin:0 auto;padding:0 22px 40px}
+
+  /* ---------- HEADER ---------- */
+  header.top{
+    background:
+      radial-gradient(900px 300px at 88% -40%, rgba(196,241,53,.10), transparent 60%),
+      linear-gradient(180deg,#0B1F2A 0%, #0d2632 100%);
+    color:#fff;border-bottom:3px solid var(--hivis);
+  }
+  .top-inner{max-width:1280px;margin:0 auto;padding:20px 22px 18px;}
+  .brandrow{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .mark{display:flex;align-items:center;gap:13px}
+  .cog{width:34px;height:34px;flex:none}
+  .brand h1{font-family:var(--disp);font-weight:600;font-size:20px;letter-spacing:-.01em;margin:0;line-height:1.15}
+  .brand .sub{color:#9fb4b3;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-top:3px}
+  .period-badge{
+    text-align:right;font-family:var(--mono);
+  }
+  .period-badge .m{font-size:22px;font-weight:600;color:#fff;letter-spacing:.02em}
+  .period-badge .l{font-size:11px;color:#9fb4b3;letter-spacing:.14em;text-transform:uppercase}
+  .verdict{
+    margin-top:20px;display:flex;gap:14px;align-items:flex-start;
+    background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);
+    border-left:3px solid var(--hivis);border-radius:8px;padding:13px 16px;
+  }
+  .verdict .tag{font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--hivis);text-transform:uppercase;padding-top:2px;white-space:nowrap}
+  .verdict p{margin:0;color:#eaf1f0;font-size:13.5px;line-height:1.55}
+  .verdict b{color:#fff;font-weight:600}
+  .scopebar{
+    display:flex;flex-wrap:wrap;gap:0;margin-top:18px;
+    border:1px solid rgba(255,255,255,.10);border-radius:8px;overflow:hidden;
+  }
+  .scopebar div{padding:9px 16px;flex:1 1 auto;min-width:150px;border-right:1px solid rgba(255,255,255,.08)}
+  .scopebar div:last-child{border-right:0}
+  .scopebar .k{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#8aa2a1}
+  .scopebar .v{font-family:var(--mono);font-size:13px;color:#eef4f3;margin-top:2px}
+
+  /* ---------- SECTIONS ---------- */
+  section{margin-top:24px}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin:0 0 11px}
+  .sec-num{font-family:var(--mono);font-size:12px;color:var(--petrol);font-weight:600}
+  .sec-head h2{font-family:var(--disp);font-size:16.5px;font-weight:600;letter-spacing:-.01em;margin:0}
+  .sec-head .hint{color:var(--muted);font-size:12px;margin-left:auto;text-align:right}
+
+  /* ---------- KPI STRIP ---------- */
+  .kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .kpi{
+    background:var(--surface);border:1px solid var(--border);border-radius:11px;
+    padding:15px 16px 14px;box-shadow:var(--shadow);overflow:hidden;
+    display:flex;flex-direction:column;min-height:150px;
+  }
+  .kpi .lab{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .kpi .val{font-family:var(--mono);font-size:26px;font-weight:600;letter-spacing:-.01em;margin-top:6px;color:var(--ink);line-height:1.1}
+  .kpi .val .u{font-size:14px;color:var(--muted-2);font-weight:500;margin-left:1px}
+  /* dedicated sparkline band beneath the value — reserved on every card so heights match, never overlaps text */
+  .kpi .spark-slot{height:30px;margin-top:14px;display:flex;align-items:flex-end}
+  .kpi .spark-slot svg{width:100%;height:30px;display:block}
+  .kpi .deltas{display:flex;gap:8px;margin-top:auto;padding-top:14px;flex-wrap:wrap}
+  .chip{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:11px;font-weight:500;
+    padding:3px 7px;border-radius:5px;line-height:1}
+  .chip .cl{font-family:var(--body);font-weight:600;letter-spacing:.02em;opacity:.72;font-size:9.5px;text-transform:uppercase}
+  .chip.up{background:var(--fav-soft);color:var(--fav)}
+  .chip.down{background:var(--unfav-soft);color:var(--unfav)}
+  .chip.flat{background:#eef2f1;color:var(--muted)}
+  .kpi.hero{border-color:var(--petrol);box-shadow:0 0 0 1px var(--petrol), var(--shadow)}
+  .kpi.hero .val{color:var(--petrol)}
+  @media (max-width:560px){ .kpi .spark-slot{display:none} }
+
+  /* ---------- CARDS / CHART PANELS ---------- */
+  .panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow);padding:17px 18px 15px}
+  .panel h3{font-family:var(--disp);font-size:13.5px;font-weight:600;margin:0 0 2px;letter-spacing:-.005em}
+  .panel .cap{color:var(--muted);font-size:11.5px;margin:0 0 12px}
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .grid-3{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:16px}
+  .grid-wf{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:9px}
+  .legend span{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--muted)}
+  .legend i{width:11px;height:11px;border-radius:3px;display:inline-block}
+  .legend i.ln{height:3px;border-radius:2px;width:16px}
+  svg{display:block;width:100%;height:auto;overflow:visible}
+  .ax{font-family:var(--mono);font-size:10px;fill:var(--muted-2)}
+  .axlab{font-family:var(--body);font-size:10px;fill:var(--muted)}
+  .val-lbl{font-family:var(--mono);font-size:10.5px;font-weight:600}
+  .gl{stroke:var(--grid);stroke-width:1}
+  .zero{stroke:var(--border-strong);stroke-width:1}
+
+  /* ---------- LIQUIDITY TILES ---------- */
+  .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .tile{border:1px solid var(--border);border-radius:10px;padding:13px 14px;background:#fff}
+  .tile .t-lab{font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .tile .t-val{font-family:var(--mono);font-size:21px;font-weight:600;margin-top:5px}
+  .tile .t-sub{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:3px}
+  .bullet-row{display:flex;flex-direction:column;gap:15px;margin-top:4px}
+  .bl{}
+  .bl .bl-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:5px}
+  .bl .bl-name{font-size:12px;font-weight:600}
+  .bl .bl-num{font-family:var(--mono);font-size:14px;font-weight:600}
+
+  /* ---------- INSIGHTS ---------- */
+  .insights{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .ins{background:var(--surface);border:1px solid var(--border);border-radius:11px;padding:15px 16px;box-shadow:var(--shadow);
+    border-left:3px solid var(--petrol);display:flex;gap:13px}
+  .ins.good{border-left-color:var(--fav)}
+  .ins.warn{border-left-color:var(--unfav)}
+  .ins.watch{border-left-color:var(--amber)}
+  .ins .ico{width:26px;height:26px;flex:none;border-radius:7px;display:grid;place-items:center;font-family:var(--mono);
+    font-size:13px;font-weight:600;background:var(--petrol-soft);color:var(--petrol)}
+  .ins.good .ico{background:var(--fav-soft);color:var(--fav)}
+  .ins.warn .ico{background:var(--unfav-soft);color:var(--unfav)}
+  .ins.watch .ico{background:var(--amber-soft);color:var(--amber)}
+  .ins h4{margin:0 0 4px;font-size:13px;font-family:var(--disp);font-weight:600}
+  .ins p{margin:0;font-size:12.5px;color:#374b49;line-height:1.5}
+  .ins b{color:var(--ink);font-weight:600}
+  .tagline{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-2);margin-top:7px}
+
+  /* ---------- FOOTER ---------- */
+  footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:11px;line-height:1.6}
+  footer b{color:var(--ink-2)}
+  .prov{font-family:var(--mono);font-size:10.5px}
+
+  .note{font-size:11px;color:var(--muted);margin-top:8px;font-style:italic}
+  @media (max-width:960px){
+    .kpi-grid{grid-template-columns:repeat(2,1fr)}
+    .grid-2,.grid-3,.grid-wf,.insights{grid-template-columns:1fr}
+  }
+  @media (max-width:560px){
+    .kpi-grid{grid-template-columns:1fr 1fr}
+    .tiles{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="brandrow">
+      <div class="mark">
+        <svg class="cog" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+          <circle cx="14" cy="30" r="8.5" stroke="#C4F135" stroke-width="2.2"/>
+          <circle cx="34" cy="30" r="8.5" stroke="#9fb4b3" stroke-width="2.2"/>
+          <path d="M14 30 L20 15 L30 15" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 30 L28 30" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="20" cy="15" r="1.8" fill="#C4F135"/>
+        </svg>
+        <div class="brand">
+          <h1>Born2Cycle — CFO Monthly Financial Snapshot</h1>
+          <div class="sub">Specialty Bicycle Retail · Pacific Northwest</div>
+        </div>
+      </div>
+      <div class="period-badge">
+        <div class="m" id="pbadge"></div>
+        <div class="l">Reporting Period</div>
+      </div>
+    </div>
+
+    <div class="scopebar">
+      <div><div class="k">Entity / Scope</div><div class="v">Born2Cycle Group (consol.)</div></div>
+      <div><div class="k">Currency</div><div class="v">USD</div></div>
+      <div><div class="k">P&amp;L basis</div><div class="v" id="sbPnl"></div></div>
+      <div><div class="k">Balance-sheet basis</div><div class="v" id="sbBs"></div></div>
+      <div><div class="k">Compared with</div><div class="v" id="sbCmp"></div></div>
+      <div><div class="k">Source</div><div class="v">Finstory governed model</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ 1 · EXECUTIVE KPI STRIP ============ -->
+  <section id="kpi">
+    <div class="sec-head">
+      <span class="sec-num">01</span>
+      <h2>Executive summary</h2>
+      <span class="hint" id="hintKpi"></span>
+    </div>
+    <div class="kpi-grid" id="kpiGrid"></div>
+    <p class="note">Cash and Cash Conversion Cycle are closing-balance measures with no budget target in the governed model — shown vs prior year only.</p>
+  </section>
+
+  <!-- ============ 2 · FINANCIAL PERFORMANCE ============ -->
+  <section id="perf">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <h2>Financial performance</h2>
+      <span class="hint">Monthly revenue, gross margin, EBITDA and budget variance</span>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <h3>Revenue trend</h3>
+        <p class="cap" id="capRev"></p>
+        <div id="revTrend"></div>
+        <div class="legend">
+          <span><i style="background:#C7D2D0"></i><span id="legRevPY"></span></span>
+          <span><i class="ln" style="background:var(--petrol)"></i><span id="legRevRY"></span></span>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Gross margin %</h3>
+        <p class="cap">Monthly actual gross margin % vs budget and prior year</p>
+        <div id="gmTrend"></div>
+        <div class="legend">
+          <span><i class="ln" style="background:var(--petrol)"></i><span id="legGmRY"></span></span>
+          <span><i class="ln" style="background:#C7D2D0"></i><span id="legGmPY"></span></span>
+          <span><i class="ln" style="background:var(--unfav)"></i><span id="legGmBud"></span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-top:14px">
+      <div class="panel">
+        <h3>Monthly EBITDA</h3>
+        <p class="cap" id="capEbitda"></p>
+        <div id="ebitdaTrend"></div>
+      </div>
+      <div class="panel">
+        <h3>EBITDA bridge · Budget → Actual</h3>
+        <p class="cap" id="capBridge"></p>
+        <div id="ebitdaBridge"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3 · LIQUIDITY & WORKING CAPITAL ============ -->
+  <section id="liq">
+    <div class="sec-head">
+      <span class="sec-num">03</span>
+      <h2>Liquidity &amp; working capital</h2>
+      <span class="hint" id="hintLiq"></span>
+    </div>
+
+    <div class="grid-3">
+      <div class="panel">
+        <h3>Position &amp; balances</h3>
+        <p class="cap" id="capTiles"></p>
+        <div class="tiles" id="tiles"></div>
+      </div>
+
+      <div class="panel">
+        <h3>Liquidity ratios</h3>
+        <p class="cap" id="capRatios"></p>
+        <div class="bullet-row" style="margin-top:12px">
+          <div class="bl">
+            <div class="bl-top"><span class="bl-name">Current ratio</span><span class="bl-num" id="curNum"></span></div>
+            <div id="curRatio"></div>
+          </div>
+          <div class="bl">
+            <div class="bl-top"><span class="bl-name">Quick ratio</span><span class="bl-num" id="quickNum"></span></div>
+            <div id="quickRatio"></div>
+          </div>
+        </div>
+        <p class="note" style="margin-top:14px" id="noteBullet"></p>
+      </div>
+
+      <div class="panel">
+        <h3>Cash conversion cycle</h3>
+        <p class="cap" id="capCcc"></p>
+        <div id="ccc"></div>
+        <div class="legend" style="margin-top:12px">
+          <span><i style="background:var(--petrol)"></i><span id="legDso"></span></span>
+          <span><i style="background:var(--amber)"></i><span id="legDio"></span></span>
+          <span><i style="background:var(--fav)"></i><span id="legDpo"></span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4 · BUSINESS MIX ============ -->
+  <section id="mix">
+    <div class="sec-head">
+      <span class="sec-num">04</span>
+      <h2>Business mix</h2>
+      <span class="hint" id="hintMix"></span>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <h3>Revenue and gross margin by business unit</h3>
+        <p class="cap" id="capEntity"></p>
+        <div id="entityMix"></div>
+        <div class="legend">
+          <span><i style="background:var(--petrol)"></i>Revenue ($M)</span>
+          <span><i style="width:11px;height:11px;border-radius:50%;background:var(--ink)"></i>Gross margin %</span>
+        </div>
+        <p class="note" id="entityNote">Entity-level prior-year comparison not shown: the revenue-to-entity mapping changed between 2025 and 2026.</p>
+      </div>
+
+      <div class="panel">
+        <h3>Cost of sales — variance vs budget</h3>
+        <p class="cap" id="capCogs"></p>
+        <div id="cogsVar"></div>
+        <div class="legend">
+          <span><i style="background:var(--unfav)"></i>Unfavourable (cost above plan)</span>
+          <span><i style="background:var(--fav)"></i>Favourable (below plan)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="prov"><b>Data provenance.</b> All figures retrieved from the Finstory governed financial model (Born2Cycle demo tenant). P&amp;L metrics are monthly (periodic); balance-sheet figures are closing balances at the period end; ratios (margins, DSO/DIO/DPO, cash conversion cycle, current/quick, working-capital ratios) are pre-defined governed members used as-returned. No values are estimated or imputed; comparisons that are not like-for-like are labelled rather than filled.</p>
+  </footer>
+</div>
+
+<script>
+/* ============================================================
+   Born2Cycle CFO dashboard — governed data + bespoke SVG charts
+   The DATA object is the ONLY thing that changes month to month.
+   ============================================================ */
+const DATA = __DATA_JSON__;
+
+const C = {petrol:'#0E6E78', hivis:'#C4F135', fav:'#16876A', unfav:'#D14343',
+  amber:'#DB8A1C', ink:'#0B1F2A', muted:'#6C7E7C', mut2:'#95A3A1', grid:'#EDF1F0',
+  bar25:'#C7D2D0', border:'#CBD5D3'};
+const SVGNS='http://www.w3.org/2000/svg';
+const el=(t,a={})=>{const e=document.createElementNS(SVGNS,t);for(const k in a)e.setAttribute(k,a[k]);return e;};
+const svg=(w,h)=>el('svg',{viewBox:`0 0 ${w} ${h}`,preserveAspectRatio:'xMidYMid meet'});
+
+/* ---------- period derivations ---------- */
+const MONTHS_L=['J','F','M','A','M','J','J','A','S','O','N','D'];
+const MONTHS_S=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const MONTHS_F=['January','February','March','April','May','June','July','August','September','October','November','December'];
+const RY=DATA.year, PY=RY-1, P=DATA.period, mi=MONTHS_S.indexOf(P);
+const MF=MONTHS_F[mi];
+const lastDay=new Date(Date.UTC(RY,mi+1,0)).getUTCDate();
+
+/* ---------- formatting (frozen rules) ---------- */
+const MINUS='−';
+const sgn=v=>v<0?MINUS:'+';
+const fM1=v=>(v<0?MINUS:'')+'$'+Math.abs(v/1e6).toFixed(1);      // $12.4
+const fM2=v=>(v<0?MINUS:'')+'$'+Math.abs(v/1e6).toFixed(2);      // $4.57
+const fPct1=f=>(f*100).toFixed(1);                                // 36.9
+const dPct=(a,b)=>sgn(a/b-1)+Math.abs((a/b-1)*100).toFixed(1)+'%';
+const dPt=(a,b)=>sgn(a-b)+Math.abs((a-b)*100).toFixed(1)+'pt';
+const dDay=(a,b)=>sgn(a-b)+Math.abs(a-b).toFixed(1)+'d';
+const dirPt=(a,b)=>a-b>0?'up':a-b<0?'down':'flat';
+/* Money chips: % change vs a negative or near-zero base is meaningless (e.g. actual
+   EBITDA $1.0M vs budget −$0.5M). Convention: fall back to the absolute $ delta, and
+   favourability is always the sign of (actual − base) for money KPIs. */
+const dMoney=(a,b)=>(b>0&&Math.abs(a/b-1)<=10)?dPct(a,b):sgn(a-b)+'$'+Math.abs((a-b)/1e6).toFixed(2)+'M';
+const dirMoney=(a,b)=>a-b>0?'up':a-b<0?'down':'flat';
+const normKey=s=>s.normalize('NFKD').replace(/[^\x20-\x7E]/g,'').trim();
+
+/* ---------- header & captions ---------- */
+const T=(id,txt)=>{document.getElementById(id).textContent=txt;};
+document.title=`Born2Cycle — CFO Monthly Snapshot · ${P} ${RY}`;
+T('pbadge',`${MF.toUpperCase()} ${RY}`);
+T('sbPnl',`${MF} ${RY} · monthly (periodic)`);
+T('sbBs',`Closing balance · ${lastDay} ${MF} ${RY}`);
+T('sbCmp',`Budget · Prior Year (${MF} ${PY})`);
+T('hintKpi',`${MF} ${RY} · monthly P&L; Cash & CCC on closing-balance basis · vs Budget and Prior Year`);
+T('capRev',`Monthly actual revenue: ${PY} and ${RY} (USD M)`);
+T('legRevPY',`${PY} monthly`);
+T('legRevRY',`${RY} monthly ${mi===0?'(Jan)':'(Jan–'+P+')'}`);
+T('legGmRY',`${RY} GM%`);
+T('legGmPY',`${PY} GM%`);
+T('legGmBud',`Budget ${fPct1(DATA.kpi.grossMarginPct.b)}%`);
+T('capEbitda',`Monthly EBITDA, ${mi===0?'January':'January–'+MF} ${RY} (USD M)`);
+T('capBridge',`${MF} ${RY} budget-to-actual EBITDA variance (USD M)`);
+T('hintLiq',`Closing balances at ${lastDay} ${MF} ${RY} · ratios vs prior year`);
+T('capTiles',`Closing balances at ${lastDay} ${MF} ${RY} (USD)`);
+T('capRatios',`Closing-balance ratios — ${MF} ${RY} vs prior year (×)`);
+T('noteBullet',`Bar = ${MF} ${RY} · ◇ = prior year (${MF} ${PY}). No governed thresholds applied.`);
+T('capCcc',`Closing-balance basis — ${MF} ${RY} (days)`);
+T('hintMix',`Revenue, gross margin and cost-of-sales variance — ${MF} ${RY}`);
+T('capEntity',`Revenue (USD M) and gross margin %, ${MF} ${RY}`);
+T('capCogs',`Cost-of-sales variance vs budget by line, ${MF} ${RY} (USD M)`);
+if(RY!==2026)document.getElementById('entityNote').style.display='none';
+
+/* ---------- series in display units ---------- */
+const D = {
+  rev25:DATA.series.revenuePY.map(v=>v/1e6),
+  rev26:DATA.series.revenueRY.map(v=>v/1e6),
+  gm25:DATA.series.gmPY.map(v=>v*100),
+  gm26:DATA.series.gmRY.map(v=>v*100),
+  ebitda26:DATA.series.ebitdaRY.map(v=>v/1e6),
+  months:MONTHS_L
+};
+
+/* ---------- KPI cards ---------- */
+const K=DATA.kpi, BS=DATA.bs, RT=DATA.ratios;
+const cccDelta=RT.ccc.ry-RT.ccc.py;
+const KPIS=[
+  {lab:'Revenue',val:fM1(K.revenue.a),u:'M',b:{d:dMoney(K.revenue.a,K.revenue.b),dir:dirMoney(K.revenue.a,K.revenue.b)},p:{d:dMoney(K.revenue.a,K.revenue.p),dir:dirMoney(K.revenue.a,K.revenue.p)},spark:D.rev26,hero:true},
+  {lab:'Gross Profit',val:fM2(K.grossProfit.a),u:'M',b:{d:dMoney(K.grossProfit.a,K.grossProfit.b),dir:dirMoney(K.grossProfit.a,K.grossProfit.b)},p:{d:dMoney(K.grossProfit.a,K.grossProfit.p),dir:dirMoney(K.grossProfit.a,K.grossProfit.p)}},
+  {lab:'Gross Margin',val:fPct1(K.grossMarginPct.a),u:'%',b:{d:dPt(K.grossMarginPct.a,K.grossMarginPct.b),dir:dirPt(K.grossMarginPct.a,K.grossMarginPct.b)},p:{d:dPt(K.grossMarginPct.a,K.grossMarginPct.p),dir:dirPt(K.grossMarginPct.a,K.grossMarginPct.p)},sparkPct:D.gm26},
+  {lab:'EBITDA',val:fM2(K.ebitda.a),u:'M',b:{d:dMoney(K.ebitda.a,K.ebitda.b),dir:dirMoney(K.ebitda.a,K.ebitda.b)},p:{d:dMoney(K.ebitda.a,K.ebitda.p),dir:dirMoney(K.ebitda.a,K.ebitda.p)},sparkE:D.ebitda26},
+  {lab:'EBITDA Margin',val:fPct1(K.ebitdaMarginPct.a),u:'%',b:{d:dPt(K.ebitdaMarginPct.a,K.ebitdaMarginPct.b),dir:dirPt(K.ebitdaMarginPct.a,K.ebitdaMarginPct.b)},p:{d:dPt(K.ebitdaMarginPct.a,K.ebitdaMarginPct.p),dir:dirPt(K.ebitdaMarginPct.a,K.ebitdaMarginPct.p)}},
+  {lab:'Net Profit',val:fM2(K.netProfit.a),u:'M',b:{d:dMoney(K.netProfit.a,K.netProfit.b),dir:dirMoney(K.netProfit.a,K.netProfit.b)},p:{d:dMoney(K.netProfit.a,K.netProfit.p),dir:dirMoney(K.netProfit.a,K.netProfit.p)}},
+  {lab:'Cash',val:fM1(BS.cash.ry),u:'M',b:null,p:{d:dMoney(BS.cash.ry,BS.cash.py),dir:dirMoney(BS.cash.ry,BS.cash.py)}},
+  {lab:'Cash Conv. Cycle',val:String(Math.round(RT.ccc.ry)),u:'d',b:null,
+   p:{d:dDay(RT.ccc.ry,RT.ccc.py),dir:Math.abs(cccDelta)<1?'flat':(cccDelta<0?'up':'down'),arrow:Math.abs(cccDelta)<1?'▬':(cccDelta<0?'▼':'▲')}}
+];
+function sparkline(vals,color,signed){
+  // viewBox roughly matches the slot aspect (~10:1) so 'meet' scaling barely distorts and stroke stays even
+  const w=300,h=30,padX=3,padY=5;const min=Math.min(...vals),max=Math.max(...vals);
+  const rng=(max-min)||1;const x=i=>vals.length===1?w/2:padX+i*(w-2*padX)/(vals.length-1);
+  const y=v=>h-padY-((v-min)/rng)*(h-2*padY);
+  const s=svg(w,h);s.setAttribute('preserveAspectRatio','xMidYMid meet');
+  if(signed){const zy=y(0);s.appendChild(el('line',{x1:padX,x2:w-padX,y1:zy,y2:zy,stroke:C.border,'stroke-dasharray':'3 3','stroke-width':1}));}
+  if(vals.length>1){
+    let d='';vals.forEach((v,i)=>d+=(i?'L':'M')+x(i).toFixed(1)+' '+y(v).toFixed(1)+' ');
+    s.appendChild(el('path',{d,fill:'none',stroke:color,'stroke-width':2,'stroke-linecap':'round','stroke-linejoin':'round'}));
+  }
+  const li=vals.length-1;
+  s.appendChild(el('circle',{cx:x(li),cy:y(vals[li]),r:3,fill:C.hivis,stroke:C.petrol,'stroke-width':1.4}));
+  return s;
+}
+function renderKpis(){
+  const g=document.getElementById('kpiGrid');
+  KPIS.forEach(k=>{
+    const c=document.createElement('div');c.className='kpi'+(k.hero?' hero':'');
+    c.innerHTML=`<div class="lab">${k.lab}</div><div class="val">${k.val}<span class="u">${k.u}</span></div><div class="spark-slot"></div>`;
+    const series=k.spark||k.sparkPct||k.sparkE;
+    if(series)c.querySelector('.spark-slot').appendChild(sparkline(series,C.petrol,!!k.sparkE));
+    const dl=document.createElement('div');dl.className='deltas';
+    const mk=(o,cl)=>{if(!o){return `<span class="chip flat"><span class="cl">${cl}</span> n/a</span>`;}
+      const arrow=o.arrow||(o.dir==='up'?'▲':o.dir==='down'?'▼':'▬');
+      const dcl=o.dir;
+      return `<span class="chip ${dcl}"><span class="cl">${cl}</span> ${arrow} ${o.d}</span>`;};
+    dl.innerHTML=mk(k.b,'Bud')+mk(k.p,'PY');
+    c.appendChild(dl);
+    g.appendChild(c);
+  });
+}
+
+/* ---------- axis helpers (frozen scale rules) ---------- */
+function niceStep(target){const c=[1,1.5,2,2.5,3,4,5,6,8,10,15,20,25,30,40,50];
+  let s=c[0];for(const v of c){if(v<=target)s=v;}return s;}
+
+/* ---------- Revenue trend (PY bars + RY line) ---------- */
+function renderRevTrend(){
+  const W=560,H=250,mL=34,mR=12,mT=14,mB=28;
+  const iw=W-mL-mR,ih=H-mT-mB;const n=12;
+  const max=Math.ceil(Math.max(...D.rev25,...D.rev26)*1.03*10)/10;
+  const y=v=>mT+ih-(v/max)*ih;
+  const bw=iw/n*0.56;const cx=i=>mL+(i+0.5)*iw/n;
+  const s=svg(W,H);
+  const step=niceStep(max/4);
+  for(let v=0;v<=max+1e-9;v+=step){const yy=y(v);
+    s.appendChild(el('line',{x1:mL,x2:W-mR,y1:yy,y2:yy,class:'gl'}));
+    s.appendChild(el('text',{x:mL-6,y:yy+3,'text-anchor':'end',class:'ax'})).textContent=v;
+  }
+  // PY bars
+  D.rev25.forEach((v,i)=>{
+    s.appendChild(el('rect',{x:cx(i)-bw/2,y:y(v),width:bw,height:mT+ih-y(v),rx:2,fill:C.bar25}));
+  });
+  // RY line
+  let d='';D.rev26.forEach((v,i)=>d+=(i?'L':'M')+cx(i).toFixed(1)+' '+y(v).toFixed(1)+' ');
+  if(D.rev26.length>1)s.appendChild(el('path',{d,fill:'none',stroke:C.petrol,'stroke-width':2.6,'stroke-linecap':'round','stroke-linejoin':'round'}));
+  D.rev26.forEach((v,i)=>{
+    s.appendChild(el('circle',{cx:cx(i),cy:y(v),r:3.6,fill:'#fff',stroke:C.petrol,'stroke-width':2}));
+    if(i===D.rev26.length-1){s.appendChild(el('circle',{cx:cx(i),cy:y(v),r:3.6,fill:C.hivis,stroke:C.petrol,'stroke-width':1.6}));
+      const t=el('text',{x:cx(i),y:y(v)-9,'text-anchor':'middle',class:'val-lbl',fill:C.petrol});t.textContent='$'+v.toFixed(1)+'M';s.appendChild(t);}
+  });
+  D.months.forEach((m,i)=>{const t=el('text',{x:cx(i),y:H-8,'text-anchor':'middle',class:'axlab'});t.textContent=m;s.appendChild(t);});
+  document.getElementById('revTrend').appendChild(s);
+}
+
+/* ---------- Gross margin trend ---------- */
+function renderGmTrend(){
+  const W=560,H=250,mL=32,mT=16,mB=26;
+  const mr=14;const iw=W-mL-mr;const ih=H-mT-mB;const n=12;
+  const bud=DATA.kpi.grossMarginPct.b*100;
+  const all=[...D.gm25,...D.gm26,bud];
+  const min=Math.floor(Math.min(...all)-4),max=Math.ceil(Math.max(...all)+1);
+  const y=v=>mT+ih-((v-min)/(max-min))*ih;
+  const cx=i=>mL+(i+0.5)*iw/n;
+  const s=svg(W,H);
+  for(let v=Math.ceil(min/10)*10;v<=Math.floor(max/10)*10;v+=10){const yy=y(v);
+    s.appendChild(el('line',{x1:mL,x2:W-mr,y1:yy,y2:yy,class:'gl'}));
+    s.appendChild(el('text',{x:mL-6,y:yy+3,'text-anchor':'end',class:'ax'})).textContent=v+'%';}
+  // budget line
+  const by=y(bud);
+  s.appendChild(el('line',{x1:mL,x2:W-mr,y1:by,y2:by,stroke:C.unfav,'stroke-width':1.4,'stroke-dasharray':'5 3'}));
+  const bt=el('text',{x:W-mr,y:by-5,'text-anchor':'end',class:'val-lbl',fill:C.unfav});bt.textContent='Budget '+bud.toFixed(1)+'%';s.appendChild(bt);
+  // PY line (muted)
+  let d25='';D.gm25.forEach((v,i)=>d25+=(i?'L':'M')+cx(i).toFixed(1)+' '+y(v).toFixed(1)+' ');
+  s.appendChild(el('path',{d:d25,fill:'none',stroke:C.bar25,'stroke-width':2,'stroke-linejoin':'round'}));
+  D.gm25.forEach((v,i)=>s.appendChild(el('circle',{cx:cx(i),cy:y(v),r:2.2,fill:C.bar25})));
+  // RY line
+  let d26='';D.gm26.forEach((v,i)=>d26+=(i?'L':'M')+cx(i).toFixed(1)+' '+y(v).toFixed(1)+' ');
+  if(D.gm26.length>1)s.appendChild(el('path',{d:d26,fill:'none',stroke:C.petrol,'stroke-width':2.8,'stroke-linecap':'round','stroke-linejoin':'round'}));
+  D.gm26.forEach((v,i)=>{const last=i===D.gm26.length-1;
+    s.appendChild(el('circle',{cx:cx(i),cy:y(v),r:last?4:3.4,fill:last?C.hivis:'#fff',stroke:C.petrol,'stroke-width':2}));});
+  const lt=el('text',{x:cx(mi),y:y(D.gm26[mi])+16,'text-anchor':'middle',class:'val-lbl',fill:C.petrol});lt.textContent=D.gm26[mi].toFixed(1)+'%';s.appendChild(lt);
+  D.months.forEach((m,i)=>{const t=el('text',{x:cx(i),y:H-8,'text-anchor':'middle',class:'axlab'});t.textContent=m;s.appendChild(t);});
+  document.getElementById('gmTrend').appendChild(s);
+}
+
+/* ---------- EBITDA monthly ---------- */
+function renderEbitda(){
+  const W=560,H=250,mL=38,mR=14,mT=16,mB=28;
+  const iw=W-mL-mR,ih=H-mT-mB;const n=D.ebitda26.length;
+  const min=Math.min(0,Math.floor((Math.min(...D.ebitda26)-0.2)*2)/2);
+  const max=Math.max(0.5,Math.ceil((Math.max(...D.ebitda26)+0.1)*10)/10);
+  const y=v=>mT+ih-((v-min)/(max-min))*ih;
+  const bw=iw/n*0.42;const cx=i=>mL+(i+0.5)*iw/n;
+  const s=svg(W,H);
+  for(let v=Math.ceil(min*2)/2;v<=Math.floor(max*2)/2+1e-9;v+=0.5){const yy=y(v);
+    s.appendChild(el('line',{x1:mL,x2:W-mR,y1:yy,y2:yy,class:v===0?'zero':'gl'}));
+    s.appendChild(el('text',{x:mL-6,y:yy+3,'text-anchor':'end',class:'ax'})).textContent=v;}
+  const zy=y(0);
+  MONTHS_S.slice(0,n).forEach((m,i)=>{
+    const v=D.ebitda26[i];const yy=y(v);const pos=v>=0;
+    s.appendChild(el('rect',{x:cx(i)-bw/2,y:pos?yy:zy,width:bw,height:Math.abs(zy-yy),rx:2,
+      fill:pos?C.fav:C.unfav,opacity:i===n-1?1:.9}));
+    const t=el('text',{x:cx(i),y:pos?yy-5:yy+12,'text-anchor':'middle',class:'val-lbl',
+      fill:pos?C.fav:C.unfav});t.textContent=(v>0?'+':'')+v.toFixed(1);s.appendChild(t);
+    const ml=el('text',{x:cx(i),y:H-8,'text-anchor':'middle',class:'axlab'});ml.textContent=m;s.appendChild(ml);
+  });
+  document.getElementById('ebitdaTrend').appendChild(s);
+}
+
+/* ---------- Generic waterfall (supports negative totals/runs, e.g. a negative
+   budget EBITDA month: the y-range extends below zero and total bars anchor at 0) ---------- */
+function waterfall(mount,steps,cfg){
+  const W=cfg.W||340,H=cfg.H||210,mL=cfg.mL||30,mR=8,mT=14,mB=cfg.mB||40;
+  const iw=W-mL-mR,ih=H-mT-mB;const n=steps.length;
+  const max=cfg.max,min=cfg.min||0;const y=v=>mT+ih-((v-min)/(max-min))*ih;
+  const gap=iw/n*0.24;const bw=iw/n-gap;const bx=i=>mL+i*iw/n+gap/2;
+  const s=svg(W,H);
+  (cfg.ticks||[]).forEach(v=>{const yy=y(v);
+    s.appendChild(el('line',{x1:mL,x2:W-mR,y1:yy,y2:yy,class:v===0&&min<0?'zero':'gl'}));
+    s.appendChild(el('text',{x:mL-5,y:yy+3,'text-anchor':'end',class:'ax'})).textContent=cfg.tickFmt?cfg.tickFmt(v):v;});
+  let run=0;
+  steps.forEach((st,i)=>{
+    let top,bot,fill;
+    if(st.type==='total'){top=y(Math.max(0,st.value));bot=y(Math.min(0,st.value));run=st.value;fill=st.color||C.petrol;}
+    else{const start=run;run=run+st.value;top=y(Math.max(start,run));bot=y(Math.min(start,run));
+      fill=st.value>=0?C.fav:C.unfav;}
+    const h=Math.max(bot-top,1.2);
+    s.appendChild(el('rect',{x:bx(i),y:top,width:bw,height:h,rx:2,fill:fill}));
+    // connector
+    if(i<n-1&&cfg.connect!==false){const yy=st.type==='total'?y(st.value):y(run);
+      s.appendChild(el('line',{x1:bx(i),x2:bx(i)+iw/n,y1:yy,y2:yy,stroke:C.border,'stroke-width':1,'stroke-dasharray':'2 2'}));}
+    // value label (values supplied in $M); negative totals labelled beneath the bar
+    const fm=v=>(v<0?'−':'')+'$'+Math.abs(v).toFixed(2)+'M';
+    const lbl=st.type==='total'?fm(st.value):(st.value>=0?'+':'−')+'$'+Math.abs(st.value).toFixed(2)+'M';
+    const ly=(st.type==='total'&&st.value<0)?bot+12:top-5;
+    const t=el('text',{x:bx(i)+bw/2,y:ly,'text-anchor':'middle',class:'val-lbl',
+      fill:st.type==='total'?C.ink:(st.value>=0?C.fav:C.unfav)});t.textContent=lbl;s.appendChild(t);
+    // x label (wrap 2 lines)
+    st.label.split('\n').forEach((ln,k)=>{
+      const xt=el('text',{x:bx(i)+bw/2,y:H-mB+16+k*11,'text-anchor':'middle',class:'axlab'});
+      xt.textContent=ln;s.appendChild(xt);});
+  });
+  mount.appendChild(s);
+}
+function renderBridge(){
+  const bud=K.ebitda.b/1e6, act=K.ebitda.a/1e6;
+  const dRev=(K.revenue.a-K.revenue.b)/1e6;
+  const dCos=(K.costOfSales.b-K.costOfSales.a)/1e6;
+  const dOpex=(K.opex.b-K.opex.a)/1e6;
+  const resid=bud+dRev+dCos+dOpex-act;
+  if(Math.abs(resid)>0.005)console.warn('EBITDA bridge does not tie: residual '+resid.toFixed(3)+'M');
+  const max=Math.max(0.5,Math.ceil((Math.max(bud,act)+0.25)*10)/10);
+  const pts=[bud,bud+dRev,bud+dRev+dCos,bud+dRev+dCos+dOpex,act];
+  const lo=Math.min(0,...pts);
+  const min=lo<0?Math.floor((lo-0.1)*10)/10:0;
+  const ticks=[];for(let v=Math.ceil(min);v<=Math.floor(max);v++)ticks.push(v);
+  waterfall(document.getElementById('ebitdaBridge'),[
+    {type:'total',label:'Budget\nEBITDA',value:bud,color:C.mut2||'#95A3A1'},
+    {type:'delta',label:'Revenue',value:dRev},
+    {type:'delta',label:'Cost of\nsales',value:dCos},
+    {type:'delta',label:'Opex',value:dOpex},
+    {type:'total',label:'Actual\nEBITDA',value:act,color:C.petrol}
+  ],{W:560,H:250,mL:38,max:max,min:min,ticks:ticks,tickFmt:v=>'$'+v+'M',mB:46});
+}
+
+/* ---------- Liquidity tiles ---------- */
+function renderTiles(){
+  const yoy=(ry,py)=>{const d=(ry/py-1)*100;
+    return `<div class="t-sub" style="color:var(--${d<0?'unfav':'fav'})">${d<0?'▼':'▲'} ${Math.abs(d).toFixed(1)}% YoY</div>`;};
+  const wcD=(RT.wcPctRevenue.ry-RT.wcPctRevenue.py)*100;
+  document.getElementById('tiles').innerHTML=
+    `<div class="tile"><div class="t-lab">Cash</div><div class="t-val">${fM1(BS.cash.ry)}M</div>${yoy(BS.cash.ry,BS.cash.py)}</div>`+
+    `<div class="tile"><div class="t-lab">Working Capital</div><div class="t-val">${fM1(BS.workingCapital.ry)}M</div>${yoy(BS.workingCapital.ry,BS.workingCapital.py)}</div>`+
+    `<div class="tile"><div class="t-lab">WC % of revenue</div><div class="t-val">${fPct1(RT.wcPctRevenue.ry)}<span style="font-size:13px">%</span></div><div class="t-sub">PY ${fPct1(RT.wcPctRevenue.py)}% · ${wcD<0?'▼':'▲'} ${Math.abs(wcD).toFixed(1)}pt</div></div>`+
+    `<div class="tile"><div class="t-lab">Inventory</div><div class="t-val">${fM1(BS.inventory.ry)}M</div><div class="t-sub">${Math.round(RT.dio.ry)} days on hand</div></div>`+
+    `<div class="tile"><div class="t-lab">Receivables</div><div class="t-val">${fM1(BS.receivables.ry)}M</div><div class="t-sub">${RT.dso.ry.toFixed(1)} days (DSO)</div></div>`+
+    `<div class="tile"><div class="t-lab">Payables</div><div class="t-val">${fM1(BS.payables.ry)}M</div><div class="t-sub">${RT.dpo.ry.toFixed(1)} days (DPO)</div></div>`;
+}
+
+/* ---------- Bullet ratio bars (neutral: Actual vs PY, no governed thresholds) ---------- */
+function bullet(mount,val,py,max){
+  const W=300,H=42,mL=2,mR=2,mT=9,mB=6;const iw=W-mL-mR;const h=14;
+  const x=v=>mL+(v/max)*iw;const s=svg(W,H);s.style.maxWidth='100%';
+  // neutral track
+  s.appendChild(el('rect',{x:mL,y:mT,width:iw,height:h,rx:3,fill:'#eef2f1'}));
+  // value bar (report month)
+  s.appendChild(el('rect',{x:mL,y:mT+h/2-4,width:Math.max(x(val)-mL,2),height:8,rx:2,fill:C.petrol}));
+  s.appendChild(el('circle',{cx:x(val),cy:mT+h/2,r:5,fill:C.petrol,stroke:'#fff','stroke-width':1.5}));
+  // PY diamond marker
+  const dy=mT+h/2;const px=x(py);
+  s.appendChild(el('path',{d:`M${px} ${dy-6} L${px+6} ${dy} L${px} ${dy+6} L${px-6} ${dy} Z`,fill:'#fff',stroke:C.muted,'stroke-width':1.6}));
+  // scale labels
+  for(let v=0;v<=max;v++){const t=el('text',{x:x(v),y:H-1,'text-anchor':'middle',class:'ax'});t.textContent=v+'×';s.appendChild(t);}
+  mount.appendChild(s);
+}
+function renderBullets(){
+  T('curNum',BS.currentRatio.ry.toFixed(2)+'×');
+  T('quickNum',BS.quickRatio.ry.toFixed(2)+'×');
+  const max=Math.max(5,Math.ceil(Math.max(BS.currentRatio.ry,BS.currentRatio.py,BS.quickRatio.ry,BS.quickRatio.py)*1.02));
+  bullet(document.getElementById('curRatio'),BS.currentRatio.ry,BS.currentRatio.py,max);
+  bullet(document.getElementById('quickRatio'),BS.quickRatio.ry,BS.quickRatio.py,max);
+}
+
+/* ---------- Cash conversion cycle ---------- */
+function renderCCC(){
+  const W=360,H=180,mL=6,mR=6,mT=30,mB=20;const iw=W-mL-mR;
+  const dso=RT.dso.ry,dio=RT.dio.ry,dpo=RT.dpo.ry,ccc=RT.ccc.ry;
+  const scaleMax=Math.ceil((dso+dio+3)/5)*5;
+  const x=v=>mL+(v/scaleMax)*iw;const s=svg(W,H);
+  const rowY=42,h=24;
+  // operating cycle: DSO then DIO
+  s.appendChild(el('rect',{x:x(0),y:rowY,width:x(dso)-x(0),height:h,fill:C.petrol}));
+  s.appendChild(el('rect',{x:x(dso),y:rowY,width:x(dio)-x(0),height:h,fill:C.amber}));
+  // labels on segments
+  const seg=(cx,txt,col)=>{const t=el('text',{x:cx,y:rowY+16,'text-anchor':'middle','font-family':'IBM Plex Mono','font-size':'10','font-weight':'600',fill:'#fff'});t.textContent=txt;s.appendChild(t);};
+  seg((x(0)+x(dso))/2,String(Math.round(dso)),C.petrol);
+  seg((x(dso)+x(dso+dio))/2,'DIO '+Math.round(dio)+'d','#fff');
+  // operating cycle bracket label
+  s.appendChild(el('text',{x:x(0),y:rowY-8,'font-family':'Inter','font-size':'10',fill:C.muted})).textContent='Operating cycle '+(dso+dio).toFixed(1)+' days  (DSO + DIO)';
+  // DPO offset bar (below)
+  const rowY2=rowY+h+18;
+  s.appendChild(el('rect',{x:x(dso+dio-dpo),y:rowY2,width:x(dpo)-x(0),height:h,fill:C.fav,opacity:.85}));
+  s.appendChild(el('text',{x:x(dso+dio-dpo/2),y:rowY2+16,'text-anchor':'middle','font-family':'IBM Plex Mono','font-size':'10','font-weight':'600',fill:'#fff'})).textContent='−DPO '+Math.round(dpo)+'d';
+  // CCC marker line
+  s.appendChild(el('line',{x1:x(ccc),x2:x(ccc),y1:rowY-14,y2:rowY2+h+6,stroke:C.ink,'stroke-width':1.4,'stroke-dasharray':'3 2'}));
+  const cbg=el('rect',{x:x(ccc)-30,y:rowY2+h+8,width:60,height:20,rx:4,fill:C.ink});s.appendChild(cbg);
+  s.appendChild(el('text',{x:x(ccc),y:rowY2+h+22,'text-anchor':'middle','font-family':'IBM Plex Mono','font-size':'11','font-weight':'600',fill:C.hivis})).textContent='CCC '+Math.round(ccc)+'d';
+  document.getElementById('ccc').appendChild(s);
+  T('legDso','DSO '+dso.toFixed(1)+'d');
+  T('legDio','DIO '+dio.toFixed(1)+'d');
+  T('legDpo','DPO −'+dpo.toFixed(1)+'d');
+}
+
+/* ---------- Entity mix (revenue bars + GM% dots) ---------- */
+const ENTITY_ORDER=['Born2Cycle Shops','Born2Cycle Retail','Born2Cycle Tours','Born2Cycle HQ','Born2Cycle Café','Born2Cycle Online'];
+const ENTITY_NAMES={'Born2Cycle Shops':'Born2Cycle Shops','Born2Cycle Retail':'Retail / Services','Born2Cycle Tours':'Bike Tours','Born2Cycle HQ':'HQ (central)','Born2Cycle Café':'Café','Born2Cycle Online':'Online (direct)'};
+function renderEntity(){
+  const byKey={};DATA.entities.forEach(e=>{byKey[normKey(e.code)]=e;});
+  const rows=[];
+  ENTITY_ORDER.forEach(code=>{const e=byKey[normKey(code)];if(!e)return;
+    rows.push({n:ENTITY_NAMES[code],rev:e.revenue/1e6,gmRaw:e.gmPct,gp:e.grossProfit});delete byKey[normKey(code)];});
+  Object.values(byKey).sort((a,b)=>b.revenue-a.revenue).forEach(e=>rows.push({n:e.code,rev:e.revenue/1e6,gmRaw:e.gmPct,gp:e.grossProfit}));
+  rows.forEach(r=>{const g=r.gmRaw==null?null:r.gmRaw*100;
+    if(g==null||g<-20||g>80){r.gm=null;r.drag=(r.gp<0?'−':'+')+'$'+Math.abs(r.gp/1e6).toFixed(2)+'M GP';}
+    else r.gm=+g.toFixed(1);});
+  const W=560,H=250,mL=118,mR=54,mT=8,mB=24;const iw=W-mL-mR;const ih=H-mT-mB;
+  const revMax=Math.ceil(Math.max(...rows.map(r=>r.rev))+0.5);const n=rows.length;const rh=ih/n;const bh=Math.min(rh*0.5,22);
+  const xr=v=>mL+(v/revMax)*iw;const gx=v=>mL+((v+20)/100)*iw; // gm% axis -20..80
+  const s=svg(W,H);
+  // gm axis gridlines
+  [-20,0,20,40,60,80].forEach(v=>{const xx=gx(v);
+    s.appendChild(el('line',{x1:xx,x2:xx,y1:mT,y2:mT+ih,stroke:v===0?C.border:C.grid,'stroke-width':1}));
+    s.appendChild(el('text',{x:xx,y:H-8,'text-anchor':'middle',class:'ax'})).textContent=v+'%';});
+  rows.forEach((r,i)=>{
+    const cy=mT+i*rh+rh/2;
+    // name
+    s.appendChild(el('text',{x:mL-10,y:cy+3.5,'text-anchor':'end','font-family':'Inter','font-size':'11','font-weight':'600',fill:C.ink})).textContent=r.n;
+    // revenue bar
+    s.appendChild(el('rect',{x:mL,y:cy-bh/2,width:Math.max(xr(r.rev)-mL,2),height:bh,rx:2,fill:C.petrol,opacity:.9}));
+    const rt=el('text',{x:xr(r.rev)+6,y:cy+3.5,'font-family':'IBM Plex Mono','font-size':'10',fill:C.muted});rt.textContent='$'+r.rev.toFixed(2)+'M';s.appendChild(rt);
+    // gm dot
+    if(r.gm!==null){s.appendChild(el('circle',{cx:gx(r.gm),cy:cy,r:4.5,fill:C.ink,stroke:'#fff','stroke-width':1.5}));
+      const gt=el('text',{x:gx(r.gm),y:cy-8,'text-anchor':'middle','font-family':'IBM Plex Mono','font-size':'9.5','font-weight':'600',fill:C.ink});gt.textContent=r.gm+'%';s.appendChild(gt);}
+    else{const dt=el('text',{x:gx(-8),y:cy+3.5,'text-anchor':'middle','font-family':'IBM Plex Mono','font-size':'9.5','font-weight':'600',fill:C.unfav});dt.textContent=r.drag;s.appendChild(dt);}
+  });
+  document.getElementById('entityMix').appendChild(s);
+}
+
+/* ---------- COGS variance drivers ---------- */
+const COGS_NAMES={'Cost of Goods Sold':'Core COGS','Inventory Adjustments':'Inventory write-offs','Aggregator & Payment Fees':'Marketplace & payment fees','Last-Mile Delivery & Vehicle':'Last-mile delivery','Inbound Freight':'Inbound freight','Direct Personnel':'Direct personnel'};
+function renderCogsVar(){
+  const rows=DATA.cogsLines.map(l=>({n:COGS_NAMES[l.code]||COGS_NAMES[normKey(l.code)]||l.code,v:(l.actual-l.budget)/1e6}))
+    .sort((a,b)=>b.v-a.v);
+  const W=560,H=250,mL=150,mT=8,mB=24;const mr=64;const iw=W-mL-mr;const ih=H-mT-mB;
+  const n=rows.length;const rh=ih/n;const bh=Math.min(rh*0.56,22);
+  const maxV=Math.max(...rows.map(r=>r.v)),minV=Math.min(...rows.map(r=>r.v));
+  const max=Math.max(0.25,Math.ceil((maxV+0.05)*4)/4);
+  let min=-0.15*max;if(minV<min)min=Math.floor((minV-0.05)*20)/20;
+  const x=v=>mL+((v-min)/(max-min))*iw;const s=svg(W,H);
+  for(let v=0;v<=max+1e-9;v+=max/4){const xx=x(v);
+    s.appendChild(el('line',{x1:xx,x2:xx,y1:mT,y2:mT+ih,stroke:v===0?C.border:C.grid,'stroke-width':v===0?1.2:1}));
+    s.appendChild(el('text',{x:xx,y:H-8,'text-anchor':'middle',class:'ax'})).textContent='$'+v.toFixed(2)+'M';}
+  const x0=x(0);
+  rows.forEach((r,i)=>{
+    const cy=mT+i*rh+rh/2;const pos=r.v>=0;
+    s.appendChild(el('text',{x:mL-10,y:cy+3.5,'text-anchor':'end','font-family':'Inter','font-size':'11','font-weight':'600',fill:C.ink})).textContent=r.n;
+    const xv=x(r.v);
+    s.appendChild(el('rect',{x:Math.min(x0,xv),y:cy-bh/2,width:Math.max(Math.abs(xv-x0),1.5),height:bh,rx:2,
+      fill:pos?C.unfav:C.fav}));
+    const t=el('text',{x:pos?xv+6:xv-6,y:cy+3.5,'text-anchor':pos?'start':'end','font-family':'IBM Plex Mono','font-size':'10','font-weight':'600',fill:pos?C.unfav:C.fav});
+    t.textContent=(pos?'+$':'−$')+Math.abs(r.v).toFixed(2)+'M';s.appendChild(t);
+  });
+  document.getElementById('cogsVar').appendChild(s);
+}
+
+/* ---------- init ---------- */
+renderKpis();
+renderRevTrend();
+renderGmTrend();
+renderEbitda();
+renderBridge();
+renderTiles();
+renderBullets();
+renderCCC();
+renderEntity();
+renderCogsVar();
+</script>
+</body>
+</html>
