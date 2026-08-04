@@ -1,0 +1,10 @@
+Posting Date,Journal ID,Entity,Dept/Store,Acct No,Account Name,Account Group,Activity Type,Journal Source,Source Doc,Memo,Debit,Credit,Support / tie-out note,Prepared by,Review flag
+2026-04-02,JRN-INV-0402-01,Born2Cycle,Stores,1200,Inventory - bikes,Inventory,Receipt,BikeLedger INV,PO-8198,March e-bike in-transit shipment physically received Apr 2,420000,0,March cut-off follow-up,m.patel,Y
+2026-04-07,JRN-INV-0407-04,Born2Cycle,Stores,1200,Inventory - bikes,Inventory,Receipt,BikeLedger INV,PO-8221,Spring e-bike replenishment batch,580000,0,Seasonal stocking plan,m.patel,N
+2026-04-09,JRN-INV-0409-08,Born2Cycle,Stores,1210,Inventory - accessories,Inventory,Receipt,BikeLedger INV,PO-8228,Accessory restock for spring campaign,135000,0,Ops approved,m.patel,N
+2026-04-12,JRN-REV-0412-02,Born2Cycle,Austin,4010,Gross e-bike sales,Revenue,Invoice,BikeLedger AR,INV-80751,Austin Mobility fleet expansion,0,620000,Ties to AR aging,m.patel,N
+2026-04-15,JRN-COGS-0415-06,Born2Cycle,All,5010,E-bike COGS,COGS,COGS posting,BikeLedger INV,COGS-0415,Battery supplier cost uplift in April,0,210000,Margin review required,m.patel,Y
+2026-04-18,JRN-MKT-0418-01,Born2Cycle,All,6100,Marketing,Opex,Vendor invoice,AP,INV-MKT-332,Spring campaign delayed from March,305000,0,"Timing, not new run-rate",m.patel,N
+2026-04-20,JRN-SVC-0420-01,Born2Cycle,Portland,5030,Service labor and parts,COGS,Payroll allocation,Payroll,PAY-0420,Service overtime lower than March but above budget,292000,0,Review capacity planning,m.patel,Y
+2026-04-22,JRN-AP-0422-05,Born2Cycle,Corporate,2000,Accounts payable,Liability,Vendor invoice,AP,BAT-APR-095,BatteryWorks invoice possibly related to March receipts,95000,0,Cut-off needs review,m.patel,Y
+2026-04-26,JRN-DEBT-0426-01,Born2Cycle,Corporate,2500,Revolver payable,Debt,Repayment,Treasury,REV-0426,Partial revolver repayment,350000,0,Treasury schedule,m.patel,N

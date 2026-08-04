@@ -1,0 +1,210 @@
+customer_id,customer_name,invoice_id,invoice_date,due_date,payment_terms,channel,store,invoice_amount,open_amount,aging_bucket,sales_order_id
+C-1001,Cascadia Health System,INV-50001,2026-05-22,2026-08-20,Net 90,Corporate / B2B,Corporate,324211.86,324211.86,Current,SO-70001
+C-1002,Pacific University Athletics,INV-50002,2026-05-26,2026-08-24,Net 90,Corporate / B2B,Corporate,225496.61,225496.61,Current,SO-70002
+C-1004,Northwest Municipal Transit,INV-50003,2026-05-28,2026-08-26,Net 90,Corporate / B2B,Corporate,193559.32,193559.32,Current,SO-70003
+C-1003,GreenFleet Logistics,INV-50004,2026-05-19,2026-08-17,Net 90,Corporate / B2B,Corporate,125813.56,125813.56,Current,SO-70004
+C-1005,Alder Tech Campus,INV-50005,2026-05-14,2026-07-13,Net 60,Corporate / B2B,Corporate,85166.1,85166.1,Current,SO-70005
+C-1006,Cascade School District,INV-50006,2026-05-20,2026-07-04,Net 45,Corporate / B2B,Corporate,67745.76,67745.76,Current,SO-70006
+C-1008,Riverside Resort Group,INV-50007,2026-05-27,2026-07-26,Net 60,Corporate / B2B,Corporate,41615.25,41615.25,Current,SO-70007
+C-1007,Summit Corporate Wellness,INV-50008,2026-05-06,2026-06-05,Net 30,Corporate / B2B,Corporate,21291.53,21291.53,Current,SO-70008
+C-1005,Alder Tech Campus,INV-50009,2026-05-09,2026-07-08,Net 60,Corporate / B2B,Corporate,19355.93,19355.93,Current,SO-70009
+C-1006,Cascade School District,INV-50010,2026-05-11,2026-06-25,Net 45,Corporate / B2B,Corporate,20323.73,20323.73,Current,SO-70010
+C-1003,GreenFleet Logistics,INV-50011,2026-05-07,2026-08-05,Net 90,Corporate / B2B,Corporate,17420.34,17420.34,Current,SO-70011
+C-1001,Cascadia Health System,INV-50012,2026-02-28,2026-05-29,Net 90,Corporate / B2B,Corporate,105123.55,105123.55,1-30,
+C-1001,Cascadia Health System,INV-50013,2026-03-14,2026-06-12,Net 90,Corporate / B2B,Corporate,99876.45,99876.45,Current,
+C-1002,Pacific University Athletics,INV-50014,2026-02-26,2026-05-27,Net 90,Corporate / B2B,Corporate,68503.22,68503.22,1-30,
+C-1002,Pacific University Athletics,INV-50015,2026-02-27,2026-05-28,Net 90,Corporate / B2B,Corporate,26630.39,26630.39,1-30,
+C-1002,Pacific University Athletics,INV-50016,2026-03-01,2026-05-30,Net 90,Corporate / B2B,Corporate,34072.58,34072.58,1-30,
+C-1002,Pacific University Athletics,INV-50017,2026-02-27,2026-05-28,Net 90,Corporate / B2B,Corporate,20793.81,20793.81,1-30,
+C-1003,GreenFleet Logistics,INV-50018,2026-04-16,2026-07-15,Net 90,Corporate / B2B,Corporate,52185.65,52185.65,Current,
+C-1003,GreenFleet Logistics,INV-50019,2026-04-07,2026-07-06,Net 90,Corporate / B2B,Corporate,36207.34,36207.34,Current,
+C-1003,GreenFleet Logistics,INV-50020,2026-04-15,2026-07-14,Net 90,Corporate / B2B,Corporate,31607.01,31607.01,Current,
+C-1004,Northwest Municipal Transit,INV-50021,2026-04-05,2026-07-04,Net 90,Corporate / B2B,Corporate,32351.01,32351.01,Current,
+C-1004,Northwest Municipal Transit,INV-50022,2026-02-28,2026-05-29,Net 90,Corporate / B2B,Corporate,13854.12,13854.12,1-30,
+C-1004,Northwest Municipal Transit,INV-50023,2026-04-05,2026-07-04,Net 90,Corporate / B2B,Corporate,25541.77,25541.77,Current,
+C-1004,Northwest Municipal Transit,INV-50024,2026-04-05,2026-07-04,Net 90,Corporate / B2B,Corporate,26253.1,26253.1,Current,
+M-AMZN,Amazon Marketplace Buyers,AMAZON-90001,2026-05-19,2026-06-02,Platform settlement,Marketplace,Marketplace,12376.31,12376.31,Current,AMAZON-90001
+M-AMZN,Amazon Marketplace Buyers,AMAZON-90002,2026-05-20,2026-06-03,Platform settlement,Marketplace,Marketplace,34189.0,34189.0,Current,AMAZON-90002
+M-AMZN,Amazon Marketplace Buyers,AMAZON-90003,2026-06-08,2026-06-22,Platform settlement,Marketplace,Marketplace,35300.41,35300.41,Current,AMAZON-90003
+M-AMZN,Amazon Marketplace Buyers,AMAZON-90004,2026-05-24,2026-06-07,Platform settlement,Marketplace,Marketplace,27676.33,27676.33,Current,AMAZON-90004
+M-AMZN,Amazon Marketplace Buyers,AMAZON-90005,2026-06-05,2026-06-19,Platform settlement,Marketplace,Marketplace,37488.47,37488.47,Current,AMAZON-90005
+M-AMZN,Amazon Marketplace Buyers,AMAZON-90006,2026-06-05,2026-06-19,Platform settlement,Marketplace,Marketplace,15498.91,15498.91,Current,AMAZON-90006
+M-AMZN,Amazon Marketplace Buyers,AMAZON-90007,2026-05-26,2026-06-09,Platform settlement,Marketplace,Marketplace,30330.82,30330.82,Current,AMAZON-90007
+M-AMZN,Amazon Marketplace Buyers,AMAZON-90008,2026-05-21,2026-06-04,Platform settlement,Marketplace,Marketplace,37020.88,37020.88,Current,AMAZON-90008
+M-AMZN,Amazon Marketplace Buyers,AMAZON-90009,2026-05-25,2026-06-08,Platform settlement,Marketplace,Marketplace,33783.71,33783.71,Current,AMAZON-90009
+M-AMZN,Amazon Marketplace Buyers,AMAZON-90011,2026-05-29,2026-06-12,Platform settlement,Marketplace,Marketplace,24454.25,24454.25,Current,AMAZON-90011
+M-AMZN,Amazon Marketplace Buyers,AMAZON-90012,2026-05-28,2026-06-11,Platform settlement,Marketplace,Marketplace,43990.74,43990.74,Current,AMAZON-90012
+M-AMZN,Amazon Marketplace Buyers,AMAZON-90014,2026-05-18,2026-06-01,Platform settlement,Marketplace,Marketplace,24520.48,24520.48,Current,AMAZON-90014
+M-AMZN,Amazon Marketplace Buyers,AMAZON-90015,2026-05-21,2026-06-04,Platform settlement,Marketplace,Marketplace,38075.26,38075.26,Current,AMAZON-90015
+M-WMT,Walmart Marketplace Buyers,WALMAR-90017,2026-05-22,2026-06-05,Platform settlement,Marketplace,Marketplace,34315.54,34315.54,Current,WALMAR-90017
+M-WMT,Walmart Marketplace Buyers,WALMAR-90018,2026-05-20,2026-06-03,Platform settlement,Marketplace,Marketplace,21071.91,21071.91,Current,WALMAR-90018
+M-WMT,Walmart Marketplace Buyers,WALMAR-90019,2026-06-04,2026-06-18,Platform settlement,Marketplace,Marketplace,13018.64,13018.64,Current,WALMAR-90019
+M-WMT,Walmart Marketplace Buyers,WALMAR-90020,2026-05-22,2026-06-05,Platform settlement,Marketplace,Marketplace,19216.54,19216.54,Current,WALMAR-90020
+M-WMT,Walmart Marketplace Buyers,WALMAR-90021,2026-05-24,2026-06-07,Platform settlement,Marketplace,Marketplace,25014.22,25014.22,Current,WALMAR-90021
+M-WMT,Walmart Marketplace Buyers,WALMAR-90022,2026-06-03,2026-06-17,Platform settlement,Marketplace,Marketplace,23987.18,23987.18,Current,WALMAR-90022
+M-WMT,Walmart Marketplace Buyers,WALMAR-90025,2026-05-31,2026-06-14,Platform settlement,Marketplace,Marketplace,24435.36,24435.36,Current,WALMAR-90025
+M-BACK,Backcountry Marketplace Buyers,BACKCO-90028,2026-05-18,2026-06-01,Platform settlement,Marketplace,Marketplace,10788.49,10788.49,Current,BACKCO-90028
+M-BACK,Backcountry Marketplace Buyers,BACKCO-90029,2026-05-18,2026-06-01,Platform settlement,Marketplace,Marketplace,13483.77,13483.77,Current,BACKCO-90029
+M-BACK,Backcountry Marketplace Buyers,BACKCO-90030,2026-05-21,2026-06-04,Platform settlement,Marketplace,Marketplace,10311.64,10311.64,Current,BACKCO-90030
+M-BACK,Backcountry Marketplace Buyers,BACKCO-90031,2026-06-04,2026-06-18,Platform settlement,Marketplace,Marketplace,12753.83,12753.83,Current,BACKCO-90031
+M-BACK,Backcountry Marketplace Buyers,BACKCO-90032,2026-06-03,2026-06-17,Platform settlement,Marketplace,Marketplace,9719.8,9719.8,Current,BACKCO-90032
+M-BACK,Backcountry Marketplace Buyers,BACKCO-90033,2026-06-09,2026-06-23,Platform settlement,Marketplace,Marketplace,5890.88,5890.88,Current,BACKCO-90033
+M-BACK,Backcountry Marketplace Buyers,BACKCO-90034,2026-05-21,2026-06-04,Platform settlement,Marketplace,Marketplace,12709.0,12709.0,Current,BACKCO-90034
+M-BACK,Backcountry Marketplace Buyers,BACKCO-90035,2026-05-22,2026-06-05,Platform settlement,Marketplace,Marketplace,14659.35,14659.35,Current,BACKCO-90035
+M-BACK,Backcountry Marketplace Buyers,BACKCO-90036,2026-05-29,2026-06-12,Platform settlement,Marketplace,Marketplace,13951.42,13951.42,Current,BACKCO-90036
+M-BACK,Backcountry Marketplace Buyers,BACKCO-90038,2026-06-02,2026-06-16,Platform settlement,Marketplace,Marketplace,12801.4,12801.4,Current,BACKCO-90038
+M-BACK,Backcountry Marketplace Buyers,BACKCO-90040,2026-05-19,2026-06-02,Platform settlement,Marketplace,Marketplace,6586.05,6586.05,Current,BACKCO-90040
+M-BACK,Backcountry Marketplace Buyers,BACKCO-90042,2026-06-01,2026-06-15,Platform settlement,Marketplace,Marketplace,8214.4,8214.4,Current,BACKCO-90042
+O-DIR,Online Direct Consumers,STRIPE-90044,2026-05-19,2026-06-02,Platform settlement,Online Direct,Online DC,131776.42,131776.42,Current,STRIPE-90044
+O-DIR,Online Direct Consumers,STRIPE-90047,2026-05-21,2026-06-04,Platform settlement,Online Direct,Online DC,78161.9,78161.9,Current,STRIPE-90047
+O-DIR,Online Direct Consumers,SHOPIF-90052,2026-05-18,2026-06-01,Platform settlement,Online Direct,Online DC,84616.79,84616.79,Current,SHOPIF-90052
+C-1007,Summit Corporate Wellness,INV-50060,2026-02-08,2026-04-09,Net 60,Corporate / B2B,Corporate,3874.8,3874.8,31-60,
+C-1006,Cascade School District,INV-50061,2026-05-06,2026-06-20,Net 45,Corporate / B2B,Corporate,3412.79,3412.79,Current,
+C-1008,Riverside Resort Group,INV-50062,2026-03-31,2026-05-15,Net 45,Corporate / B2B,Corporate,1979.15,1979.15,1-30,
+C-1005,Alder Tech Campus,INV-50063,2026-05-04,2026-06-18,Net 45,Corporate / B2B,Corporate,4092.84,4092.84,Current,
+C-1007,Summit Corporate Wellness,INV-50064,2026-04-11,2026-05-26,Net 45,Corporate / B2B,Corporate,4056.45,4056.45,1-30,
+C-1008,Riverside Resort Group,INV-50065,2026-04-23,2026-06-07,Net 45,Corporate / B2B,Corporate,4929.52,4929.52,Current,
+C-1008,Riverside Resort Group,INV-50066,2026-04-10,2026-05-25,Net 45,Corporate / B2B,Corporate,3227.84,3227.84,1-30,
+C-1005,Alder Tech Campus,INV-50067,2026-05-12,2026-06-26,Net 45,Corporate / B2B,Corporate,2793.92,2793.92,Current,
+C-1006,Cascade School District,INV-50068,2026-03-09,2026-05-08,Net 60,Corporate / B2B,Corporate,1499.87,1499.87,1-30,
+C-1008,Riverside Resort Group,INV-50069,2026-03-31,2026-05-15,Net 45,Corporate / B2B,Corporate,2799.07,2799.07,1-30,
+C-1006,Cascade School District,INV-50070,2026-05-18,2026-07-02,Net 45,Corporate / B2B,Corporate,2177.3,2177.3,Current,
+C-1008,Riverside Resort Group,INV-50071,2026-04-10,2026-05-25,Net 45,Corporate / B2B,Corporate,2549.08,2549.08,1-30,
+C-1005,Alder Tech Campus,INV-50072,2026-02-26,2026-04-27,Net 60,Corporate / B2B,Corporate,3550.44,3550.44,31-60,
+C-1005,Alder Tech Campus,INV-50073,2026-02-20,2026-04-21,Net 60,Corporate / B2B,Corporate,2687.71,2687.71,31-60,
+C-1008,Riverside Resort Group,INV-50074,2026-04-22,2026-06-06,Net 45,Corporate / B2B,Corporate,3855.34,3855.34,Current,
+C-1008,Riverside Resort Group,INV-50075,2026-04-22,2026-06-06,Net 45,Corporate / B2B,Corporate,2954.67,2954.67,Current,
+C-1006,Cascade School District,INV-50076,2026-04-26,2026-06-10,Net 45,Corporate / B2B,Corporate,5010.56,5010.56,Current,
+C-1007,Summit Corporate Wellness,INV-50077,2026-03-15,2026-04-29,Net 45,Corporate / B2B,Corporate,2897.37,2897.37,31-60,
+C-1005,Alder Tech Campus,INV-50078,2026-05-02,2026-06-16,Net 45,Corporate / B2B,Corporate,4142.4,4142.4,Current,
+C-1008,Riverside Resort Group,INV-50079,2026-05-07,2026-06-21,Net 45,Corporate / B2B,Corporate,2516.52,2516.52,Current,
+C-1005,Alder Tech Campus,INV-50080,2026-02-19,2026-04-20,Net 60,Corporate / B2B,Corporate,3422.91,3422.91,31-60,
+C-1006,Cascade School District,INV-50081,2026-05-10,2026-06-24,Net 45,Corporate / B2B,Corporate,2245.54,2245.54,Current,
+C-1006,Cascade School District,INV-50082,2026-04-20,2026-06-04,Net 45,Corporate / B2B,Corporate,2998.24,2998.24,Current,
+C-1007,Summit Corporate Wellness,INV-50083,2026-04-20,2026-06-04,Net 45,Corporate / B2B,Corporate,4254.81,4254.81,Current,
+C-1008,Riverside Resort Group,INV-50084,2026-05-07,2026-06-21,Net 45,Corporate / B2B,Corporate,4449.09,4449.09,Current,
+C-1007,Summit Corporate Wellness,INV-50085,2026-04-06,2026-05-21,Net 45,Corporate / B2B,Corporate,3872.24,3872.24,1-30,
+C-1007,Summit Corporate Wellness,INV-50086,2026-05-17,2026-07-01,Net 45,Corporate / B2B,Corporate,2470.31,2470.31,Current,
+C-1006,Cascade School District,INV-50087,2026-04-22,2026-06-06,Net 45,Corporate / B2B,Corporate,1888.75,1888.75,Current,
+C-1006,Cascade School District,INV-50088,2026-05-12,2026-06-26,Net 45,Corporate / B2B,Corporate,3907.04,3907.04,Current,
+C-1007,Summit Corporate Wellness,INV-50089,2026-05-15,2026-06-29,Net 45,Corporate / B2B,Corporate,2690.58,2690.58,Current,
+C-1005,Alder Tech Campus,INV-50090,2026-05-07,2026-06-21,Net 45,Corporate / B2B,Corporate,4889.93,4889.93,Current,
+C-1005,Alder Tech Campus,INV-50091,2026-02-06,2026-04-07,Net 60,Corporate / B2B,Corporate,4413.36,4413.36,31-60,
+C-1006,Cascade School District,INV-50092,2026-05-01,2026-06-15,Net 45,Corporate / B2B,Corporate,1616.66,1616.66,Current,
+C-1007,Summit Corporate Wellness,INV-50093,2026-04-27,2026-06-11,Net 45,Corporate / B2B,Corporate,2641.84,2641.84,Current,
+C-1008,Riverside Resort Group,INV-50094,2026-03-23,2026-05-07,Net 45,Corporate / B2B,Corporate,3387.19,3387.19,1-30,
+C-1007,Summit Corporate Wellness,INV-50095,2026-05-06,2026-06-20,Net 45,Corporate / B2B,Corporate,1722.39,1722.39,Current,
+C-1008,Riverside Resort Group,INV-50096,2026-05-01,2026-06-15,Net 45,Corporate / B2B,Corporate,2171.41,2171.41,Current,
+C-1006,Cascade School District,INV-50097,2026-04-20,2026-06-04,Net 45,Corporate / B2B,Corporate,1679.08,1679.08,Current,
+C-1006,Cascade School District,INV-50098,2026-05-12,2026-06-26,Net 45,Corporate / B2B,Corporate,1822.63,1822.63,Current,
+C-1006,Cascade School District,INV-50099,2026-02-24,2026-04-25,Net 60,Corporate / B2B,Corporate,3586.0,3586.0,31-60,
+C-1007,Summit Corporate Wellness,INV-50100,2026-04-20,2026-06-04,Net 45,Corporate / B2B,Corporate,3250.54,3250.54,Current,
+C-1008,Riverside Resort Group,INV-50101,2026-04-20,2026-06-04,Net 45,Corporate / B2B,Corporate,3830.2,3830.2,Current,
+C-1005,Alder Tech Campus,INV-50102,2026-03-04,2026-05-03,Net 60,Corporate / B2B,Corporate,3459.89,3459.89,1-30,
+C-1005,Alder Tech Campus,INV-50103,2026-02-13,2026-04-14,Net 60,Corporate / B2B,Corporate,1520.61,1520.61,31-60,
+C-1007,Summit Corporate Wellness,INV-50104,2026-02-16,2026-04-17,Net 60,Corporate / B2B,Corporate,3415.25,3415.25,31-60,
+C-1007,Summit Corporate Wellness,INV-50105,2026-05-01,2026-06-15,Net 45,Corporate / B2B,Corporate,3321.38,3321.38,Current,
+C-1006,Cascade School District,INV-50106,2026-05-16,2026-06-30,Net 45,Corporate / B2B,Corporate,2869.13,2869.13,Current,
+C-1008,Riverside Resort Group,INV-50107,2026-05-14,2026-06-28,Net 45,Corporate / B2B,Corporate,2655.0,2655.0,Current,
+C-1007,Summit Corporate Wellness,INV-50108,2026-04-01,2026-05-16,Net 45,Corporate / B2B,Corporate,1889.6,1889.6,1-30,
+C-1007,Summit Corporate Wellness,INV-50109,2026-02-10,2026-04-11,Net 60,Corporate / B2B,Corporate,4590.25,4590.25,31-60,
+C-1008,Riverside Resort Group,INV-50110,2026-04-12,2026-05-27,Net 45,Corporate / B2B,Corporate,3098.78,3098.78,1-30,
+C-1005,Alder Tech Campus,INV-50111,2026-05-05,2026-06-19,Net 45,Corporate / B2B,Corporate,3080.75,3080.75,Current,
+C-1008,Riverside Resort Group,INV-50112,2026-04-27,2026-06-11,Net 45,Corporate / B2B,Corporate,2883.36,2883.36,Current,
+C-1006,Cascade School District,INV-50113,2026-03-22,2026-05-06,Net 45,Corporate / B2B,Corporate,3414.72,3414.72,1-30,
+C-1007,Summit Corporate Wellness,INV-50114,2026-04-23,2026-06-07,Net 45,Corporate / B2B,Corporate,4592.08,4592.08,Current,
+C-1007,Summit Corporate Wellness,INV-50115,2026-04-12,2026-05-27,Net 45,Corporate / B2B,Corporate,3817.23,3817.23,1-30,
+C-1007,Summit Corporate Wellness,INV-50116,2026-03-08,2026-05-07,Net 60,Corporate / B2B,Corporate,3430.01,3430.01,1-30,
+C-1006,Cascade School District,INV-50117,2026-04-26,2026-06-10,Net 45,Corporate / B2B,Corporate,4663.7,4663.7,Current,
+C-1008,Riverside Resort Group,INV-50118,2026-02-10,2026-04-11,Net 60,Corporate / B2B,Corporate,2548.93,2548.93,31-60,
+C-1008,Riverside Resort Group,INV-50119,2026-05-17,2026-07-01,Net 45,Corporate / B2B,Corporate,4688.64,4688.64,Current,
+C-1008,Riverside Resort Group,INV-50120,2026-03-02,2026-05-01,Net 60,Corporate / B2B,Corporate,2595.91,2595.91,1-30,
+C-1007,Summit Corporate Wellness,INV-50121,2026-03-17,2026-05-01,Net 45,Corporate / B2B,Corporate,1427.78,1427.78,1-30,
+C-1006,Cascade School District,INV-50122,2026-03-15,2026-04-29,Net 45,Corporate / B2B,Corporate,3168.89,3168.89,31-60,
+C-1008,Riverside Resort Group,INV-50123,2026-05-10,2026-06-24,Net 45,Corporate / B2B,Corporate,2019.64,2019.64,Current,
+C-1008,Riverside Resort Group,INV-50124,2026-05-16,2026-06-30,Net 45,Corporate / B2B,Corporate,1441.74,1441.74,Current,
+C-1008,Riverside Resort Group,INV-50125,2026-02-07,2026-04-08,Net 60,Corporate / B2B,Corporate,4437.01,4437.01,31-60,
+C-1005,Alder Tech Campus,INV-50126,2026-03-25,2026-05-09,Net 45,Corporate / B2B,Corporate,4325.11,4325.11,1-30,
+C-1005,Alder Tech Campus,INV-50127,2026-05-14,2026-06-28,Net 45,Corporate / B2B,Corporate,2599.13,2599.13,Current,
+C-1007,Summit Corporate Wellness,INV-50128,2026-03-20,2026-05-04,Net 45,Corporate / B2B,Corporate,2653.4,2653.4,1-30,
+C-1007,Summit Corporate Wellness,INV-50129,2026-04-21,2026-06-05,Net 45,Corporate / B2B,Corporate,2462.4,2462.4,Current,
+C-1008,Riverside Resort Group,INV-50130,2026-04-20,2026-06-04,Net 45,Corporate / B2B,Corporate,4410.5,4410.5,Current,
+C-1005,Alder Tech Campus,INV-50131,2026-05-10,2026-06-24,Net 45,Corporate / B2B,Corporate,3991.47,3991.47,Current,
+C-1007,Summit Corporate Wellness,INV-50132,2026-02-15,2026-04-16,Net 60,Corporate / B2B,Corporate,4625.11,4625.11,31-60,
+C-1007,Summit Corporate Wellness,INV-50133,2026-03-31,2026-05-15,Net 45,Corporate / B2B,Corporate,3972.5,3972.5,1-30,
+C-1005,Alder Tech Campus,INV-50134,2026-03-09,2026-05-08,Net 60,Corporate / B2B,Corporate,2487.45,2487.45,1-30,
+C-1005,Alder Tech Campus,INV-50135,2026-02-18,2026-04-19,Net 60,Corporate / B2B,Corporate,4365.83,4365.83,31-60,
+C-1005,Alder Tech Campus,INV-50136,2026-03-08,2026-05-07,Net 60,Corporate / B2B,Corporate,4557.5,4557.5,1-30,
+C-1008,Riverside Resort Group,INV-50137,2026-03-21,2026-05-05,Net 45,Corporate / B2B,Corporate,2428.14,2428.14,1-30,
+C-1007,Summit Corporate Wellness,INV-50138,2026-04-05,2026-05-20,Net 45,Corporate / B2B,Corporate,4866.3,4866.3,1-30,
+C-1005,Alder Tech Campus,INV-50139,2026-04-11,2026-05-26,Net 45,Corporate / B2B,Corporate,4405.86,4405.86,1-30,
+C-1008,Riverside Resort Group,INV-50140,2026-03-18,2026-05-02,Net 45,Corporate / B2B,Corporate,4702.9,4702.9,1-30,
+C-1005,Alder Tech Campus,INV-50141,2026-03-17,2026-05-01,Net 45,Corporate / B2B,Corporate,4221.83,4221.83,1-30,
+C-1008,Riverside Resort Group,INV-50142,2026-02-20,2026-04-21,Net 60,Corporate / B2B,Corporate,3265.81,3265.81,31-60,
+C-1007,Summit Corporate Wellness,INV-50143,2026-04-26,2026-06-10,Net 45,Corporate / B2B,Corporate,3746.01,3746.01,Current,
+C-1005,Alder Tech Campus,INV-50144,2026-05-15,2026-06-29,Net 45,Corporate / B2B,Corporate,4639.86,4639.86,Current,
+C-1005,Alder Tech Campus,INV-50145,2026-02-25,2026-04-26,Net 60,Corporate / B2B,Corporate,1576.26,1576.26,31-60,
+C-1008,Riverside Resort Group,INV-50146,2026-03-23,2026-05-07,Net 45,Corporate / B2B,Corporate,3810.03,3810.03,1-30,
+C-1007,Summit Corporate Wellness,INV-50147,2026-02-13,2026-04-14,Net 60,Corporate / B2B,Corporate,1769.27,1769.27,31-60,
+C-1008,Riverside Resort Group,INV-50148,2026-04-07,2026-05-22,Net 45,Corporate / B2B,Corporate,3247.42,3247.42,1-30,
+C-1005,Alder Tech Campus,INV-50149,2026-03-15,2026-04-29,Net 45,Corporate / B2B,Corporate,1844.82,1844.82,31-60,
+C-1005,Alder Tech Campus,INV-50150,2026-04-14,2026-05-29,Net 45,Corporate / B2B,Corporate,3969.19,3969.19,1-30,
+C-1007,Summit Corporate Wellness,INV-50151,2026-04-07,2026-05-22,Net 45,Corporate / B2B,Corporate,4790.65,4790.65,1-30,
+C-1005,Alder Tech Campus,INV-50152,2026-02-24,2026-04-25,Net 60,Corporate / B2B,Corporate,2709.57,2709.57,31-60,
+C-1008,Riverside Resort Group,INV-50153,2026-04-25,2026-06-09,Net 45,Corporate / B2B,Corporate,1988.86,1988.86,Current,
+C-1007,Summit Corporate Wellness,INV-50154,2026-05-17,2026-07-01,Net 45,Corporate / B2B,Corporate,4073.92,4073.92,Current,
+C-1008,Riverside Resort Group,INV-50155,2026-04-25,2026-06-09,Net 45,Corporate / B2B,Corporate,4655.41,4655.41,Current,
+C-1006,Cascade School District,INV-50156,2026-05-03,2026-06-17,Net 45,Corporate / B2B,Corporate,4887.98,4887.98,Current,
+C-1006,Cascade School District,INV-50157,2026-05-02,2026-06-16,Net 45,Corporate / B2B,Corporate,3529.53,3529.53,Current,
+C-1007,Summit Corporate Wellness,INV-50158,2026-04-06,2026-05-21,Net 45,Corporate / B2B,Corporate,1867.39,1867.39,1-30,
+C-1006,Cascade School District,INV-50159,2026-05-11,2026-06-25,Net 45,Corporate / B2B,Corporate,4125.93,4125.93,Current,
+C-1007,Summit Corporate Wellness,INV-50160,2026-05-04,2026-06-18,Net 45,Corporate / B2B,Corporate,4828.65,4828.65,Current,
+C-1008,Riverside Resort Group,INV-50161,2026-04-08,2026-05-23,Net 45,Corporate / B2B,Corporate,2614.82,2614.82,1-30,
+C-1006,Cascade School District,INV-50162,2026-03-07,2026-05-06,Net 60,Corporate / B2B,Corporate,1804.35,1804.35,1-30,
+C-1008,Riverside Resort Group,INV-50163,2026-04-25,2026-06-09,Net 45,Corporate / B2B,Corporate,1672.94,1672.94,Current,
+C-1006,Cascade School District,INV-50164,2026-02-09,2026-04-10,Net 60,Corporate / B2B,Corporate,1508.87,1508.87,31-60,
+C-1008,Riverside Resort Group,INV-50165,2026-04-25,2026-06-09,Net 45,Corporate / B2B,Corporate,4335.41,4335.41,Current,
+C-1007,Summit Corporate Wellness,INV-50166,2026-05-04,2026-06-18,Net 45,Corporate / B2B,Corporate,3810.02,3810.02,Current,
+C-1008,Riverside Resort Group,INV-50167,2026-05-09,2026-06-23,Net 45,Corporate / B2B,Corporate,3238.48,3238.48,Current,
+C-1008,Riverside Resort Group,INV-50168,2026-03-26,2026-05-10,Net 45,Corporate / B2B,Corporate,3158.19,3158.19,1-30,
+C-1008,Riverside Resort Group,INV-50169,2026-04-24,2026-06-08,Net 45,Corporate / B2B,Corporate,2850.82,2850.82,Current,
+C-1005,Alder Tech Campus,INV-50170,2026-04-02,2026-05-17,Net 45,Corporate / B2B,Corporate,3972.4,3972.4,1-30,
+C-1008,Riverside Resort Group,INV-50171,2026-05-16,2026-06-30,Net 45,Corporate / B2B,Corporate,4311.08,4311.08,Current,
+C-1006,Cascade School District,INV-50172,2026-04-29,2026-06-13,Net 45,Corporate / B2B,Corporate,1656.67,1656.67,Current,
+C-1005,Alder Tech Campus,INV-50173,2026-04-27,2026-06-11,Net 45,Corporate / B2B,Corporate,4093.03,4093.03,Current,
+C-1007,Summit Corporate Wellness,INV-50174,2026-04-22,2026-06-06,Net 45,Corporate / B2B,Corporate,4833.0,4833.0,Current,
+C-1008,Riverside Resort Group,INV-50175,2026-02-20,2026-04-21,Net 60,Corporate / B2B,Corporate,3867.33,3867.33,31-60,
+C-1008,Riverside Resort Group,INV-50176,2026-03-10,2026-05-09,Net 60,Corporate / B2B,Corporate,3203.28,3203.28,1-30,
+C-1006,Cascade School District,INV-50177,2026-02-20,2026-04-21,Net 60,Corporate / B2B,Corporate,4939.52,4939.52,31-60,
+C-1007,Summit Corporate Wellness,INV-50178,2026-05-16,2026-06-30,Net 45,Corporate / B2B,Corporate,3370.45,3370.45,Current,
+C-1005,Alder Tech Campus,INV-50179,2026-04-29,2026-06-13,Net 45,Corporate / B2B,Corporate,1736.68,1736.68,Current,
+C-1008,Riverside Resort Group,INV-50180,2026-04-13,2026-05-28,Net 45,Corporate / B2B,Corporate,1837.19,1837.19,1-30,
+C-1008,Riverside Resort Group,INV-50181,2026-05-18,2026-07-02,Net 45,Corporate / B2B,Corporate,4066.1,4066.1,Current,
+C-1007,Summit Corporate Wellness,INV-50182,2026-05-16,2026-06-30,Net 45,Corporate / B2B,Corporate,2231.36,2231.36,Current,
+C-1007,Summit Corporate Wellness,INV-50183,2026-03-15,2026-04-29,Net 45,Corporate / B2B,Corporate,1774.14,1774.14,31-60,
+C-1008,Riverside Resort Group,INV-50184,2026-04-04,2026-05-19,Net 45,Corporate / B2B,Corporate,2470.15,2470.15,1-30,
+C-1007,Summit Corporate Wellness,INV-50185,2026-04-11,2026-05-26,Net 45,Corporate / B2B,Corporate,1862.6,1862.6,1-30,
+C-1005,Alder Tech Campus,INV-50186,2026-05-15,2026-06-29,Net 45,Corporate / B2B,Corporate,3564.05,3564.05,Current,
+C-1007,Summit Corporate Wellness,INV-50187,2026-04-28,2026-06-12,Net 45,Corporate / B2B,Corporate,3869.24,3869.24,Current,
+C-1008,Riverside Resort Group,INV-50188,2026-04-21,2026-06-05,Net 45,Corporate / B2B,Corporate,3416.43,3416.43,Current,
+C-1007,Summit Corporate Wellness,INV-50189,2026-05-15,2026-06-29,Net 45,Corporate / B2B,Corporate,2006.76,2006.76,Current,
+C-1008,Riverside Resort Group,INV-50190,2026-03-08,2026-05-07,Net 60,Corporate / B2B,Corporate,3201.07,3201.07,1-30,
+C-1005,Alder Tech Campus,INV-50191,2026-05-10,2026-06-24,Net 45,Corporate / B2B,Corporate,2929.9,2929.9,Current,
+C-1006,Cascade School District,INV-50192,2026-04-24,2026-06-08,Net 45,Corporate / B2B,Corporate,3096.31,3096.31,Current,
+C-1007,Summit Corporate Wellness,INV-50193,2026-04-03,2026-05-18,Net 45,Corporate / B2B,Corporate,1560.53,1560.53,1-30,
+C-1008,Riverside Resort Group,INV-50194,2026-04-24,2026-06-08,Net 45,Corporate / B2B,Corporate,4441.15,4441.15,Current,
+C-1005,Alder Tech Campus,INV-50195,2026-02-10,2026-04-11,Net 60,Corporate / B2B,Corporate,2098.73,2098.73,31-60,
+C-1005,Alder Tech Campus,INV-50196,2026-02-08,2026-04-09,Net 60,Corporate / B2B,Corporate,3378.4,3378.4,31-60,
+C-1008,Riverside Resort Group,INV-50197,2026-04-06,2026-05-21,Net 45,Corporate / B2B,Corporate,3957.21,3957.21,1-30,
+C-1007,Summit Corporate Wellness,INV-50198,2026-05-18,2026-07-02,Net 45,Corporate / B2B,Corporate,3473.13,3473.13,Current,
+C-1006,Cascade School District,INV-50199,2026-04-07,2026-05-22,Net 45,Corporate / B2B,Corporate,2901.65,2901.65,1-30,
+C-1008,Riverside Resort Group,INV-50200,2026-02-07,2026-04-08,Net 60,Corporate / B2B,Corporate,1403.65,1403.65,31-60,
+C-1007,Summit Corporate Wellness,INV-50201,2026-05-02,2026-06-16,Net 45,Corporate / B2B,Corporate,4190.65,4190.65,Current,
+C-1008,Riverside Resort Group,INV-50202,2026-03-26,2026-05-10,Net 45,Corporate / B2B,Corporate,4599.82,4599.82,1-30,
+C-1008,Riverside Resort Group,INV-50203,2026-03-22,2026-05-06,Net 45,Corporate / B2B,Corporate,3182.08,3182.08,1-30,
+C-1006,Cascade School District,INV-50204,2026-05-18,2026-07-02,Net 45,Corporate / B2B,Corporate,2341.59,2341.59,Current,
+C-1007,Summit Corporate Wellness,INV-50205,2026-03-02,2026-05-01,Net 60,Corporate / B2B,Corporate,2630.32,2630.32,1-30,
+C-1006,Cascade School District,INV-50206,2026-04-25,2026-06-09,Net 45,Corporate / B2B,Corporate,1727.05,1727.05,Current,
+C-1005,Alder Tech Campus,INV-50207,2026-05-10,2026-06-24,Net 45,Corporate / B2B,Corporate,3710.97,3710.97,Current,
+C-1006,Cascade School District,INV-50208,2026-03-22,2026-05-06,Net 45,Corporate / B2B,Corporate,3339.4,3339.4,1-30,
+C-1005,Alder Tech Campus,INV-50209,2026-05-10,2026-06-24,Net 45,Corporate / B2B,Corporate,2920.29,2920.29,Current,

@@ -1,0 +1,161 @@
+return_id,original_sales_order_id,return_date,channel,store,product_category,customer_id,gross_refund_amount,restocking_fee,net_refund_amount,reason_code,payment_status,chargeback_flag
+RET-80001,SO-70107,2026-05-19,Online Direct,Online DC,E-bikes,O-DIR,4662.37,263.83,4398.54,defective_battery,Refunded,N
+RET-80002,SO-70434,2026-05-13,Online Direct,Online DC,E-bikes,O-DIR,5288.2,509.89,4778.31,defective_battery,Refunded,N
+RET-80003,SO-70400,2026-05-27,Online Direct,Online DC,E-bikes,O-DIR,4703.97,27.07,4676.9,defective_battery,Refunded,N
+RET-80004,SO-70283,2026-05-22,Online Direct,Online DC,E-bikes,O-DIR,4194.76,478.03,3716.73,defective_battery,Pending,N
+RET-80005,SO-70410,2026-05-26,Online Direct,Online DC,E-bikes,O-DIR,3044.3,187.02,2857.28,defective_battery,Refunded,N
+RET-80006,SO-70456,2026-05-05,Online Direct,Online DC,E-bikes,O-DIR,3422.11,172.67,3249.44,defective_battery,Pending,N
+RET-80007,SO-70320,2026-05-06,Online Direct,Online DC,E-bikes,O-DIR,5795.65,616.9,5178.75,defective_battery,Refunded,N
+RET-80008,SO-70662,2026-05-31,Online Direct,Online DC,E-bikes,O-DIR,6349.74,591.49,5758.25,defective_battery,Refunded,N
+RET-80009,SO-70395,2026-05-31,Online Direct,Online DC,E-bikes,O-DIR,4574.06,86.47,4487.59,defective_battery,Pending,N
+RET-80010,SO-70176,2026-05-24,Online Direct,Online DC,E-bikes,O-DIR,2938.27,7.71,2930.56,defective_battery,Refunded,N
+RET-80011,SO-70112,2026-05-28,Online Direct,Online DC,E-bikes,O-DIR,4180.86,77.5,4103.36,defective_battery,Pending,N
+RET-80012,SO-70275,2026-05-23,Online Direct,Online DC,E-bikes,O-DIR,4954.76,109.79,4844.97,defective_battery,Pending,N
+RET-80013,SO-70695,2026-05-31,Online Direct,Online DC,E-bikes,O-DIR,6449.39,293.51,6155.88,defective_battery,Refunded,N
+RET-80014,SO-70634,2026-05-13,Online Direct,Online DC,E-bikes,O-DIR,5339.74,352.93,4986.81,defective_battery,Pending,N
+RET-80015,SO-70138,2026-05-25,Online Direct,Online DC,E-bikes,O-DIR,4942.3,114.34,4827.96,defective_battery,Pending,N
+RET-80016,SO-70112,2026-05-24,Online Direct,Online DC,E-bikes,O-DIR,6832.61,701.75,6130.86,defective_battery,Refunded,N
+RET-80017,SO-70127,2026-05-03,Online Direct,Online DC,E-bikes,O-DIR,6659.91,375.97,6283.94,defective_battery,Refunded,N
+RET-80018,SO-70438,2026-05-09,Online Direct,Online DC,Bikes,O-DIR,2786.1,52.07,2734.03,sizing_fit,Pending,N
+RET-80019,SO-70691,2026-05-23,Online Direct,Online DC,Bikes,O-DIR,3379.75,15.38,3364.37,sizing_fit,Refunded,N
+RET-80020,SO-70617,2026-05-23,Online Direct,Online DC,Bikes,O-DIR,2891.29,20.1,2871.19,sizing_fit,Refunded,N
+RET-80021,SO-70189,2026-05-20,Online Direct,Online DC,Bikes,O-DIR,2112.03,180.9,1931.13,sizing_fit,Refunded,N
+RET-80022,SO-70666,2026-05-12,Online Direct,Online DC,Bikes,O-DIR,2984.22,297.85,2686.37,sizing_fit,Refunded,N
+RET-80023,SO-70431,2026-05-16,Online Direct,Online DC,Bikes,O-DIR,2686.14,56.51,2629.63,sizing_fit,Pending,N
+RET-80024,SO-70653,2026-05-09,Online Direct,Online DC,Bikes,O-DIR,1180.17,70.34,1109.83,sizing_fit,Refunded,N
+RET-80025,SO-70215,2026-05-24,Online Direct,Online DC,Bikes,O-DIR,2509.25,297.63,2211.62,sizing_fit,Pending,N
+RET-80026,SO-70568,2026-05-31,Online Direct,Online DC,Bikes,O-DIR,1550.72,136.05,1414.67,sizing_fit,Pending,N
+RET-80027,SO-70688,2026-05-29,Online Direct,Online DC,Bikes,O-DIR,2784.12,70.36,2713.76,sizing_fit,Pending,N
+RET-80028,SO-70607,2026-05-25,Online Direct,Online DC,Bikes,O-DIR,1487.99,24.17,1463.82,sizing_fit,Refunded,N
+RET-80029,SO-70312,2026-05-05,Online Direct,Online DC,Bikes,O-DIR,2850.23,52.95,2797.28,sizing_fit,Refunded,N
+RET-80030,SO-70732,2026-05-29,Online Direct,Online DC,Bikes,O-DIR,2482.8,102.91,2379.89,sizing_fit,Refunded,N
+RET-80031,SO-70063,2026-05-31,Online Direct,Online DC,Bikes,O-DIR,2741.25,50.97,2690.28,sizing_fit,Refunded,N
+RET-80032,SO-70429,2026-05-06,Online Direct,Online DC,Bikes,O-DIR,1753.8,38.51,1715.29,sizing_fit,Pending,N
+RET-80033,SO-70098,2026-05-09,Online Direct,Online DC,Bikes,O-DIR,2153.14,169.51,1983.63,sizing_fit,Pending,N
+RET-80034,SO-70243,2026-05-14,Marketplace,Marketplace,E-bikes,M-AMZN,5066.11,198.17,4867.94,buyer_dispute,Pending,Y
+RET-80035,SO-70251,2026-05-22,Marketplace,Marketplace,E-bikes,M-AMZN,2386.98,240.71,2146.27,buyer_dispute,Refunded,Y
+RET-80036,SO-70507,2026-05-30,Marketplace,Marketplace,E-bikes,M-AMZN,5321.39,282.48,5038.91,buyer_dispute,Pending,Y
+RET-80037,SO-70356,2026-05-10,Marketplace,Marketplace,E-bikes,M-AMZN,3293.95,33.94,3260.01,buyer_dispute,Refunded,Y
+RET-80038,SO-70377,2026-05-30,Marketplace,Marketplace,E-bikes,M-AMZN,2211.51,208.73,2002.78,buyer_dispute,Refunded,Y
+RET-80039,SO-70240,2026-05-04,Marketplace,Marketplace,E-bikes,M-AMZN,4973.72,215.0,4758.72,buyer_dispute,Pending,Y
+RET-80040,SO-70417,2026-05-27,Marketplace,Marketplace,E-bikes,M-AMZN,5921.66,131.84,5789.82,buyer_dispute,Refunded,Y
+RET-80041,SO-70308,2026-05-19,Marketplace,Marketplace,E-bikes,M-AMZN,6468.91,704.66,5764.25,buyer_dispute,Refunded,Y
+RET-80042,SO-70176,2026-05-19,Marketplace,Marketplace,E-bikes,M-AMZN,5914.03,583.86,5330.17,buyer_dispute,Refunded,Y
+RET-80043,SO-70518,2026-05-24,Marketplace,Marketplace,E-bikes,M-AMZN,5036.45,517.05,4519.4,buyer_dispute,Refunded,Y
+RET-80044,SO-70549,2026-05-27,Marketplace,Marketplace,E-bikes,M-AMZN,5139.0,365.2,4773.8,buyer_dispute,Pending,Y
+RET-80045,SO-70493,2026-05-24,Marketplace,Marketplace,E-bikes,M-AMZN,3619.16,13.24,3605.92,buyer_dispute,Pending,Y
+RET-80046,SO-70101,2026-05-18,Marketplace,Marketplace,E-bikes,M-AMZN,5980.13,84.58,5895.55,buyer_dispute,Pending,Y
+RET-80047,SO-70175,2026-05-10,Marketplace,Marketplace,Accessories,M-WMT,616.85,61.39,555.46,not_as_described,Refunded,Y
+RET-80048,SO-70324,2026-05-04,Marketplace,Marketplace,Accessories,M-WMT,762.8,5.27,757.53,not_as_described,Refunded,Y
+RET-80049,SO-70605,2026-05-04,Marketplace,Marketplace,Accessories,M-WMT,1133.6,54.52,1079.08,not_as_described,Pending,Y
+RET-80050,SO-70302,2026-05-30,Marketplace,Marketplace,Accessories,M-WMT,1925.02,87.57,1837.45,not_as_described,Refunded,Y
+RET-80051,SO-70605,2026-05-28,Marketplace,Marketplace,Accessories,M-WMT,961.22,91.35,869.87,not_as_described,Refunded,Y
+RET-80052,SO-70492,2026-05-03,Marketplace,Marketplace,Accessories,M-WMT,2017.09,175.49,1841.6,not_as_described,Pending,Y
+RET-80053,SO-70305,2026-05-09,Marketplace,Marketplace,Accessories,M-WMT,1817.83,25.32,1792.51,not_as_described,Refunded,Y
+RET-80054,SO-70622,2026-05-26,Marketplace,Marketplace,Accessories,M-WMT,1659.64,7.22,1652.42,not_as_described,Refunded,Y
+RET-80055,SO-70061,2026-05-11,Marketplace,Marketplace,Accessories,M-WMT,778.67,82.06,696.61,not_as_described,Pending,Y
+RET-80056,SO-70616,2026-05-22,Marketplace,Marketplace,Accessories,M-WMT,1804.04,174.66,1629.38,not_as_described,Refunded,Y
+RET-80057,SO-70376,2026-05-19,Marketplace,Marketplace,Accessories,M-WMT,1087.88,2.94,1084.94,not_as_described,Refunded,Y
+RET-80058,SO-70043,2026-05-17,Marketplace,Marketplace,Accessories,M-WMT,631.78,63.14,568.64,not_as_described,Pending,Y
+RET-80059,SO-70629,2026-05-06,Marketplace,Marketplace,Accessories,M-WMT,1268.17,62.2,1205.97,not_as_described,Pending,Y
+RET-80060,SO-70167,2026-05-15,Marketplace,Marketplace,Accessories,M-WMT,1397.47,140.55,1256.92,not_as_described,Refunded,Y
+RET-80061,SO-70107,2026-05-14,Marketplace,Marketplace,Accessories,M-WMT,839.01,43.84,795.17,not_as_described,Pending,Y
+RET-80062,SO-70706,2026-05-28,Marketplace,Marketplace,Accessories,M-WMT,865.31,66.88,798.43,not_as_described,Refunded,Y
+RET-80063,SO-70454,2026-05-23,Marketplace,Marketplace,Accessories,M-WMT,723.01,46.76,676.25,not_as_described,Refunded,Y
+RET-80064,SO-70314,2026-05-25,Marketplace,Marketplace,Accessories,M-WMT,549.12,43.97,505.15,not_as_described,Pending,Y
+RET-80065,SO-70506,2026-05-11,Marketplace,Marketplace,Accessories,M-WMT,1013.66,97.99,915.67,not_as_described,Refunded,Y
+RET-80066,SO-70036,2026-05-29,Marketplace,Marketplace,Accessories,M-WMT,1337.82,64.79,1273.03,not_as_described,Refunded,Y
+RET-80067,SO-70588,2026-05-27,Marketplace,Marketplace,Accessories,M-WMT,1818.01,63.94,1754.07,not_as_described,Refunded,Y
+RET-80068,SO-70244,2026-05-10,Marketplace,Marketplace,Accessories,M-WMT,1825.0,149.53,1675.47,not_as_described,Refunded,Y
+RET-80069,SO-70608,2026-05-22,Marketplace,Marketplace,Apparel,M-BACK,1469.09,131.82,1337.27,return_window,Refunded,N
+RET-80070,SO-70403,2026-05-05,Marketplace,Marketplace,Apparel,M-BACK,1047.3,98.95,948.35,return_window,Pending,N
+RET-80071,SO-70598,2026-05-28,Marketplace,Marketplace,Apparel,M-BACK,1715.76,182.29,1533.47,return_window,Refunded,N
+RET-80072,SO-70260,2026-05-29,Marketplace,Marketplace,Apparel,M-BACK,1033.05,97.25,935.8,return_window,Pending,N
+RET-80073,SO-70143,2026-05-31,Marketplace,Marketplace,Apparel,M-BACK,675.26,10.54,664.72,return_window,Pending,N
+RET-80074,SO-70408,2026-05-05,Marketplace,Marketplace,Apparel,M-BACK,1867.71,27.33,1840.38,return_window,Refunded,N
+RET-80075,SO-70540,2026-05-22,Marketplace,Marketplace,Apparel,M-BACK,1701.31,102.59,1598.72,return_window,Refunded,N
+RET-80076,SO-70459,2026-05-19,Marketplace,Marketplace,Apparel,M-BACK,993.89,95.29,898.6,return_window,Refunded,N
+RET-80077,SO-70175,2026-05-15,Marketplace,Marketplace,Apparel,M-BACK,1844.96,196.69,1648.27,return_window,Refunded,N
+RET-80078,SO-70085,2026-05-18,Marketplace,Marketplace,Apparel,M-BACK,833.49,67.54,765.95,return_window,Refunded,N
+RET-80079,SO-70652,2026-05-26,Marketplace,Marketplace,Apparel,M-BACK,1608.13,174.44,1433.69,return_window,Refunded,N
+RET-80080,SO-70658,2026-05-07,Marketplace,Marketplace,Apparel,M-BACK,1270.35,1.59,1268.76,return_window,Refunded,N
+RET-80081,SO-70069,2026-05-18,Marketplace,Marketplace,Apparel,M-BACK,1426.67,47.28,1379.39,return_window,Refunded,N
+RET-80082,SO-70094,2026-05-22,Marketplace,Marketplace,Apparel,M-BACK,1680.03,149.47,1530.56,return_window,Refunded,N
+RET-80083,SO-70476,2026-05-07,In-store,Seattle,Bikes,R-IN,3162.91,21.52,3141.39,changed_mind,Refunded,N
+RET-80084,SO-70690,2026-05-04,In-store,Spokane,Bikes,R-IN,2082.72,234.85,1847.87,changed_mind,Refunded,N
+RET-80085,SO-70303,2026-05-26,In-store,Seattle,Bikes,R-IN,4557.82,256.1,4301.72,changed_mind,Pending,N
+RET-80086,SO-70695,2026-05-04,In-store,Tacoma,Bikes,R-IN,1646.64,97.73,1548.91,changed_mind,Refunded,N
+RET-80087,SO-70505,2026-05-19,In-store,Spokane,Bikes,R-IN,4132.58,174.56,3958.02,changed_mind,Refunded,N
+RET-80088,SO-70245,2026-05-23,In-store,Portland,Bikes,R-IN,2790.96,222.71,2568.25,changed_mind,Refunded,N
+RET-80089,SO-70168,2026-05-11,In-store,Eugene,Bikes,R-IN,2374.9,226.71,2148.19,changed_mind,Pending,N
+RET-80090,SO-70317,2026-05-16,In-store,Spokane,Bikes,R-IN,1453.5,55.88,1397.62,changed_mind,Refunded,N
+RET-80091,SO-70283,2026-05-08,In-store,Eugene,Bikes,R-IN,4009.41,236.18,3773.23,changed_mind,Refunded,N
+RET-80092,SO-70298,2026-05-24,In-store,Eugene,Bikes,R-IN,4455.56,347.91,4107.65,changed_mind,Refunded,N
+RET-80093,SO-70205,2026-05-08,Warranty Plans,Corporate,E-bikes,W-PLAN,1922.08,78.65,1843.43,warranty_claim,Refunded,N
+RET-80094,SO-70011,2026-05-18,Warranty Plans,Corporate,E-bikes,W-PLAN,3811.04,355.56,3455.48,warranty_claim,Pending,N
+RET-80095,SO-70040,2026-05-08,Warranty Plans,Corporate,E-bikes,W-PLAN,3274.16,252.34,3021.82,warranty_claim,Refunded,N
+RET-80096,SO-70228,2026-05-03,Warranty Plans,Corporate,E-bikes,W-PLAN,3683.11,215.55,3467.56,warranty_claim,Refunded,N
+RET-80097,SO-70261,2026-05-13,Warranty Plans,Corporate,E-bikes,W-PLAN,3452.29,401.12,3051.17,warranty_claim,Refunded,N
+RET-80098,SO-70579,2026-05-18,Warranty Plans,Corporate,E-bikes,W-PLAN,3187.71,166.33,3021.38,warranty_claim,Refunded,N
+RET-80099,SO-70098,2026-05-28,Warranty Plans,Corporate,E-bikes,W-PLAN,1829.13,101.13,1728.0,warranty_claim,Pending,N
+RET-80100,SO-70733,2026-05-27,Warranty Plans,Corporate,E-bikes,W-PLAN,3450.79,96.71,3354.08,warranty_claim,Pending,N
+RET-80101,SO-70467,2026-05-12,Warranty Plans,Corporate,E-bikes,W-PLAN,4228.2,103.75,4124.45,warranty_claim,Refunded,N
+RET-80102,SO-70700,2026-05-21,Warranty Plans,Corporate,E-bikes,W-PLAN,3815.67,426.65,3389.02,warranty_claim,Pending,N
+RET-80103,SO-70649,2026-05-09,Warranty Plans,Corporate,E-bikes,W-PLAN,5194.28,412.0,4782.28,warranty_claim,Pending,N
+RET-80104,SO-70441,2026-05-29,Warranty Plans,Corporate,E-bikes,W-PLAN,3201.96,317.38,2884.58,warranty_claim,Refunded,N
+RET-80105,SO-70424,2026-05-28,Warranty Plans,Corporate,E-bikes,W-PLAN,2250.96,135.76,2115.2,warranty_claim,Refunded,N
+RET-80106,SO-70530,2026-05-30,Warranty Plans,Corporate,E-bikes,W-PLAN,2698.62,150.21,2548.41,warranty_claim,Refunded,N
+RET-80107,SO-70399,2026-05-27,Online Direct,Online DC,Apparel,O-DIR,1408.83,68.28,1340.55,sizing_fit,Refunded,N
+RET-80108,SO-70639,2026-05-12,Online Direct,Online DC,Apparel,O-DIR,1170.32,29.99,1140.33,sizing_fit,Pending,N
+RET-80109,SO-70078,2026-05-30,Online Direct,Online DC,Apparel,O-DIR,1024.82,34.38,990.44,sizing_fit,Refunded,N
+RET-80110,SO-70028,2026-05-10,Online Direct,Online DC,Apparel,O-DIR,449.05,39.59,409.46,sizing_fit,Refunded,N
+RET-80111,SO-70022,2026-05-03,Online Direct,Online DC,Apparel,O-DIR,1053.07,99.24,953.83,sizing_fit,Refunded,N
+RET-80112,SO-70285,2026-05-13,Online Direct,Online DC,Apparel,O-DIR,645.05,39.52,605.53,sizing_fit,Refunded,N
+RET-80113,SO-70668,2026-05-06,Online Direct,Online DC,Apparel,O-DIR,1523.78,151.0,1372.78,sizing_fit,Refunded,N
+RET-80114,SO-70146,2026-05-25,Online Direct,Online DC,Apparel,O-DIR,1386.84,19.56,1367.28,sizing_fit,Refunded,N
+RET-80115,SO-70216,2026-05-14,Online Direct,Online DC,Apparel,O-DIR,727.68,3.15,724.53,sizing_fit,Refunded,N
+RET-80116,SO-70131,2026-05-05,Online Direct,Online DC,Apparel,O-DIR,1531.63,37.64,1493.99,sizing_fit,Refunded,N
+RET-80117,SO-70424,2026-05-03,Online Direct,Online DC,Apparel,O-DIR,1351.68,58.95,1292.73,sizing_fit,Pending,N
+RET-80118,SO-70618,2026-05-23,Online Direct,Online DC,Apparel,O-DIR,656.09,9.41,646.68,sizing_fit,Refunded,N
+RET-80119,SO-70661,2026-05-28,Online Direct,Online DC,Apparel,O-DIR,963.16,83.1,880.06,sizing_fit,Pending,N
+RET-80120,SO-70061,2026-05-26,Online Direct,Online DC,Apparel,O-DIR,1523.19,91.73,1431.46,sizing_fit,Refunded,N
+RET-80121,SO-70548,2026-05-30,Online Direct,Online DC,Apparel,O-DIR,667.0,76.99,590.01,sizing_fit,Refunded,N
+RET-80122,SO-70367,2026-05-23,Online Direct,Online DC,Apparel,O-DIR,550.21,62.18,488.03,sizing_fit,Pending,N
+RET-80123,SO-70463,2026-05-14,Online Direct,Online DC,Apparel,O-DIR,547.47,65.43,482.04,sizing_fit,Pending,N
+RET-80124,SO-70521,2026-05-03,Online Direct,Online DC,Apparel,O-DIR,1576.32,129.9,1446.42,sizing_fit,Refunded,N
+RET-80125,SO-70041,2026-05-31,Online Direct,Online DC,Apparel,O-DIR,1331.58,20.2,1311.38,sizing_fit,Refunded,N
+RET-80126,SO-70629,2026-05-10,Online Direct,Online DC,Apparel,O-DIR,648.13,58.67,589.46,sizing_fit,Refunded,N
+RET-80127,SO-70715,2026-05-25,Online Direct,Online DC,Apparel,O-DIR,968.79,37.18,931.61,sizing_fit,Refunded,N
+RET-80128,SO-70023,2026-05-30,Online Direct,Online DC,Apparel,O-DIR,1295.31,147.44,1147.87,sizing_fit,Pending,N
+RET-80129,SO-70316,2026-05-25,Corporate / B2B,Corporate,E-bikes,C-1003,1097.42,51.54,1045.88,fleet_qa_reject,Refunded,N
+RET-80130,SO-70717,2026-05-06,Corporate / B2B,Corporate,E-bikes,C-1003,1476.74,142.38,1334.36,fleet_qa_reject,Refunded,N
+RET-80131,SO-70262,2026-05-17,Corporate / B2B,Corporate,E-bikes,C-1003,1556.05,39.34,1516.71,fleet_qa_reject,Refunded,N
+RET-80132,SO-70228,2026-05-15,Corporate / B2B,Corporate,E-bikes,C-1003,928.11,14.86,913.25,fleet_qa_reject,Pending,N
+RET-80133,SO-70484,2026-05-22,Corporate / B2B,Corporate,E-bikes,C-1003,1424.78,163.08,1261.7,fleet_qa_reject,Pending,N
+RET-80134,SO-70582,2026-05-25,Corporate / B2B,Corporate,E-bikes,C-1003,431.63,11.32,420.31,fleet_qa_reject,Pending,N
+RET-80135,SO-70474,2026-05-10,Corporate / B2B,Corporate,E-bikes,C-1003,1239.94,50.94,1189.0,fleet_qa_reject,Refunded,N
+RET-80136,SO-70338,2026-05-25,Corporate / B2B,Corporate,E-bikes,C-1003,630.95,29.98,600.97,fleet_qa_reject,Refunded,N
+RET-80137,SO-70625,2026-05-10,Corporate / B2B,Corporate,E-bikes,C-1003,1017.81,63.03,954.78,fleet_qa_reject,Refunded,N
+RET-80138,SO-70002,2026-05-03,Corporate / B2B,Corporate,E-bikes,C-1003,907.61,56.9,850.71,fleet_qa_reject,Refunded,N
+RET-80139,SO-70426,2026-05-19,Corporate / B2B,Corporate,E-bikes,C-1003,1327.55,98.36,1229.19,fleet_qa_reject,Refunded,N
+RET-80140,SO-70034,2026-05-27,Corporate / B2B,Corporate,E-bikes,C-1003,772.38,59.17,713.21,fleet_qa_reject,Pending,N
+RET-80141,SO-70104,2026-05-31,Corporate / B2B,Corporate,E-bikes,C-1003,971.88,80.18,891.7,fleet_qa_reject,Pending,N
+RET-80142,SO-70329,2026-05-09,Corporate / B2B,Corporate,E-bikes,C-1003,456.31,47.97,408.34,fleet_qa_reject,Refunded,N
+RET-80143,SO-70628,2026-05-18,Corporate / B2B,Corporate,E-bikes,C-1003,1093.84,32.74,1061.1,fleet_qa_reject,Refunded,N
+RET-80144,SO-70166,2026-05-18,Service & Repairs,Eugene,Service,S-SVC,3048.01,138.85,2909.16,rework,Pending,N
+RET-80145,SO-70114,2026-05-17,Service & Repairs,Spokane,Service,S-SVC,2582.3,49.78,2532.52,rework,Pending,N
+RET-80146,SO-70601,2026-05-12,Service & Repairs,Bend,Service,S-SVC,1586.61,145.17,1441.44,rework,Pending,N
+RET-80147,SO-70537,2026-05-03,Service & Repairs,Bend,Service,S-SVC,1189.39,94.43,1094.96,rework,Refunded,N
+RET-80148,SO-70659,2026-05-21,Service & Repairs,Spokane,Service,S-SVC,3011.09,289.18,2721.91,rework,Pending,N
+RET-80149,SO-70043,2026-05-06,Service & Repairs,Bend,Service,S-SVC,1305.55,28.75,1276.8,rework,Refunded,N
+RET-80150,SO-70208,2026-05-29,Service & Repairs,Tacoma,Service,S-SVC,2339.52,197.2,2142.32,rework,Refunded,N
+RET-80151,SO-70058,2026-05-19,Service & Repairs,Tacoma,Service,S-SVC,3171.71,241.88,2929.83,rework,Refunded,N
+RET-80152,SO-70010,2026-05-06,Service & Repairs,Portland,Service,S-SVC,2435.9,99.46,2336.44,rework,Refunded,N
+RET-80153,SO-70033,2026-05-17,Service & Repairs,Tacoma,Service,S-SVC,1521.5,27.34,1494.16,rework,Refunded,N
+RET-80154,SO-70140,2026-05-23,Service & Repairs,Eugene,Service,S-SVC,2314.24,117.22,2197.02,rework,Refunded,N
+RET-80155,SO-70027,2026-05-06,Service & Repairs,Seattle,Service,S-SVC,1517.25,18.41,1498.84,rework,Pending,N
+RET-80156,SO-70683,2026-05-17,Service & Repairs,Portland,Service,S-SVC,1318.38,43.23,1275.15,rework,Pending,N
+RET-80157,SO-70557,2026-05-08,Service & Repairs,Seattle,Service,S-SVC,3271.5,125.3,3146.2,rework,Pending,N
+RET-80158,SO-70089,2026-05-13,Service & Repairs,Eugene,Service,S-SVC,3398.77,95.36,3303.41,rework,Pending,N
+RET-80159,SO-70270,2026-05-06,Service & Repairs,Bend,Service,S-SVC,2862.95,280.99,2581.96,rework,Pending,N
+RET-80160,SO-70333,2026-05-30,Service & Repairs,Portland,Service,S-SVC,1458.33,145.14,1313.19,rework,Refunded,N

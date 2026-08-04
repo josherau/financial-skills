@@ -1,19 +1,20 @@
 ---
-name: born2cycle-monthly-snapshot
+name: koen-advisors-sample-monthly-snapshot
 description: >-
-  Generate the Born2Cycle CFO Monthly Financial Snapshot — the governed, fixed-design
-  single-page HTML report (executive KPIs, revenue/GM/EBITDA trends, EBITDA bridge,
-  liquidity and working capital, cash conversion cycle, business mix, cost-of-sales
-  variance) built from the Finstory data-analysis MCP connector. Use this skill whenever
-  the user asks for the monthly finance snapshot, CFO monthly snapshot, monthly
-  financial report or pack, month-end reporting snapshot, or a snapshot for a named
-  month and year for Born2Cycle — even if they only say "run the monthly snapshot" or
-  mention NetSuite/Finstory monthly reporting. The layout, wording and formatting are
-  fixed; only the reporting year and period vary. Do NOT design a new dashboard from
-  scratch when this skill applies.
+  Generate the Koen Advisors sample CFO Monthly Financial Snapshot for the Born2Cycle
+  demo company — the governed, fixed-design single-page HTML report (executive KPIs,
+  revenue/GM/EBITDA trends, EBITDA bridge, liquidity and working capital, cash
+  conversion cycle, business mix, cost-of-sales variance) built from the Finstory
+  data-analysis MCP connector. Use this skill whenever the user asks for the Koen
+  Advisors sample monthly finance snapshot, CFO monthly snapshot, monthly financial
+  report or pack, month-end reporting snapshot, or a snapshot for a named month and
+  year for the Born2Cycle demo company — even if they only say "run the monthly
+  snapshot" or mention NetSuite/Finstory monthly reporting. The layout, wording and
+  formatting are fixed; only the reporting year and period vary. Do NOT design a new
+  dashboard from scratch when this skill applies.
 ---
 
-# Born2Cycle — CFO Monthly Financial Snapshot
+# Koen Advisors Sample — CFO Monthly Financial Snapshot
 
 This skill regenerates a **governed monthly deliverable**. The design, wording, chart
 logic and number formatting are frozen in `assets/template.html` (bundled with this
@@ -145,8 +146,8 @@ and names verbatim as returned (the template maps display labels itself).
 
 1. Read `assets/template.html` from this skill's folder and write its content
    **verbatim, in full, changing nothing** to the output file, named
-   `Born2Cycle_Monthly_Snapshot_` + period code + `_` + year + `.html`
-   (e.g. `Born2Cycle_Monthly_Snapshot_May_2026.html`). The template contains the
+   `Koen_Advisors_Sample_Monthly_Snapshot_` + period code + `_` + year + `.html`
+   (e.g. `Koen_Advisors_Sample_Monthly_Snapshot_May_2026.html`). The template contains the
    placeholder line `const DATA = __DATA_JSON__;`.
 2. Replace `__DATA_JSON__` (one Edit) with the DATA object from Step 3.
 3. Verify the written file: it must end with the init block calling `renderKpis();`

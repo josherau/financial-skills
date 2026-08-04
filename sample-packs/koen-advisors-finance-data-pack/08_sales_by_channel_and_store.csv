@@ -1,0 +1,56 @@
+store,channel,product_category,actual_net_sales,budget_net_sales,variance_amount,gross_margin_percent_actual,gross_margin_percent_budget,cash_collected_in_may,cash_conversion_percent
+Bend,In-store,Accessories,60656.2,66264.04,-5607.84,43.5,44.0,60656.2,100.0
+Bend,In-store,Apparel,103786.24,113381.57,-9595.33,43.5,44.0,103786.24,100.0
+Bend,In-store,Bikes,67239.69,73456.19,-6216.5,43.5,44.0,67239.69,100.0
+Bend,In-store,E-bikes,140878.84,153903.49,-13024.65,43.5,44.0,140878.84,100.0
+Bend,In-store,Parts,97242.06,106232.36,-8990.3,43.5,44.0,97242.06,100.0
+Bend,Service & Repairs,Service,106337.52,98556.73,7780.79,62.0,63.0,106337.52,100.0
+Bend,Warranty Plans,Warranty,52112.96,46048.91,6064.05,80.0,82.0,52112.96,100.0
+Corporate,Corporate / B2B,Accessories,152911.86,109796.61,43115.25,40.0,41.0,0.0,0.0
+Corporate,Corporate / B2B,Bikes,230335.59,165389.83,64945.76,40.0,41.0,0.0,0.0
+Corporate,Corporate / B2B,E-bikes,450025.42,323135.59,126889.83,40.0,41.0,0.0,0.0
+Corporate,Corporate / B2B,Parts,308727.12,221677.97,87049.15,40.0,41.0,0.0,0.0
+Eugene,In-store,Accessories,64507.52,70471.42,-5963.9,43.5,44.0,64507.52,100.0
+Eugene,In-store,Apparel,97985.74,107044.8,-9059.06,43.5,44.0,97985.74,100.0
+Eugene,In-store,Bikes,113198.04,123663.52,-10465.48,43.5,44.0,113198.04,100.0
+Eugene,In-store,E-bikes,69556.91,75987.64,-6430.73,43.5,44.0,69556.91,100.0
+Eugene,In-store,Parts,60399.05,65983.11,-5584.06,43.5,44.0,60399.05,100.0
+Eugene,Service & Repairs,Service,41535.64,38496.45,3039.19,62.0,63.0,41535.64,100.0
+Eugene,Warranty Plans,Warranty,42470.87,37528.81,4942.06,80.0,82.0,42470.87,100.0
+Marketplace,Marketplace,Accessories,292745.49,235027.53,57717.96,34.5,37.0,113566.51,38.8
+Marketplace,Marketplace,Apparel,270157.8,216893.25,53264.55,34.5,37.0,115459.12,42.7
+Marketplace,Marketplace,E-bikes,409926.9,329105.35,80821.55,34.5,37.0,190639.79,46.5
+Marketplace,Marketplace,Parts,295169.81,236973.87,58195.94,34.5,37.0,112883.1,38.2
+Online DC,Online Direct,Accessories,288070.16,278668.39,9401.77,40.0,40.5,244165.67,84.8
+Online DC,Online Direct,Apparel,318802.3,308397.53,10404.77,40.0,40.5,270759.0,84.9
+Online DC,Online Direct,Bikes,317858.38,307484.41,10373.97,40.0,40.5,281449.55,88.5
+Online DC,Online Direct,E-bikes,310915.15,300767.79,10147.36,40.0,40.5,253190.85,81.4
+Online DC,Online Direct,Parts,296354.01,286681.88,9672.13,40.0,40.5,264991.33,89.4
+Portland,In-store,Accessories,80632.59,88087.3,-7454.71,43.5,44.0,80632.59,100.0
+Portland,In-store,Apparel,90740.57,99129.79,-8389.22,43.5,44.0,90740.57,100.0
+Portland,In-store,Bikes,52727.9,57602.74,-4874.84,43.5,44.0,52727.9,100.0
+Portland,In-store,E-bikes,94409.58,103138.01,-8728.43,43.5,44.0,94409.58,100.0
+Portland,In-store,Parts,96360.15,105268.92,-8908.77,43.5,44.0,96360.15,100.0
+Portland,Service & Repairs,Service,86702.22,80358.16,6344.06,62.0,63.0,83512.9,96.3
+Portland,Warranty Plans,Warranty,37778.73,33382.66,4396.07,80.0,82.0,37778.73,100.0
+Seattle,In-store,Accessories,79093.19,86405.58,-7312.39,43.5,44.0,79093.19,100.0
+Seattle,In-store,Apparel,163043.88,178117.75,-15073.87,43.5,44.0,163043.88,100.0
+Seattle,In-store,Bikes,22791.95,24899.13,-2107.18,43.5,44.0,22791.95,100.0
+Seattle,In-store,E-bikes,84261.35,92051.55,-7790.2,43.5,44.0,84261.35,100.0
+Seattle,In-store,Parts,80287.38,87710.18,-7422.8,43.5,44.0,80287.38,100.0
+Seattle,Service & Repairs,Service,129698.35,120208.23,9490.12,62.0,63.0,122486.17,94.4
+Seattle,Warranty Plans,Warranty,35033.79,30957.13,4076.66,80.0,82.0,35033.79,100.0
+Spokane,In-store,Accessories,136688.36,149325.59,-12637.23,43.5,44.0,136688.36,100.0
+Spokane,In-store,Apparel,80983.78,88470.96,-7487.18,43.5,44.0,80983.78,100.0
+Spokane,In-store,Bikes,108056.21,118046.31,-9990.1,43.5,44.0,108056.21,100.0
+Spokane,In-store,E-bikes,82128.46,89721.47,-7593.01,43.5,44.0,82128.46,100.0
+Spokane,In-store,Parts,109686.83,119827.69,-10140.86,43.5,44.0,109686.83,100.0
+Spokane,Service & Repairs,Service,100351.14,93008.37,7342.77,62.0,63.0,94456.99,94.1
+Spokane,Warranty Plans,Warranty,76344.55,67460.82,8883.73,80.0,82.0,76344.55,100.0
+Tacoma,In-store,Accessories,98157.02,107231.91,-9074.89,43.5,44.0,98157.02,100.0
+Tacoma,In-store,Apparel,77695.54,84878.71,-7183.17,43.5,44.0,77695.54,100.0
+Tacoma,In-store,Bikes,52956.34,57852.3,-4895.96,43.5,44.0,52956.34,100.0
+Tacoma,In-store,E-bikes,85499.62,93404.3,-7904.68,43.5,44.0,85499.62,100.0
+Tacoma,In-store,Parts,98349.01,107441.65,-9092.64,43.5,44.0,98349.01,100.0
+Tacoma,Service & Repairs,Service,68375.13,63372.07,5003.06,62.0,63.0,68375.13,100.0
+Tacoma,Warranty Plans,Warranty,31259.1,27621.68,3637.42,80.0,82.0,31259.1,100.0

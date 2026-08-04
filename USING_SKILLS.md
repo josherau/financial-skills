@@ -14,7 +14,7 @@ Start with `DIRECTORY.md`. Pick the narrowest skill that matches the work:
 - Use `self-improving-finance` when improving the finance operating system itself. Its source folder is `skills/self-improving-finance-skill-pack/`.
 - Use `cfo-board-prep` for board, lender, investor, audit committee, or finance committee preparation.
 - Use `cfo-brain`, `cfo-memory`, `cfo-audit-trail`, and `cfo-quality-gate` as standalone CFO stack skills when that layer is needed directly.
-- Use `born2cycle-monthly-snapshot` only for the governed Born2Cycle monthly snapshot.
+- Use `koen-advisors-sample-monthly-snapshot` only for the governed Koen Advisors sample monthly snapshot using the Born2Cycle demo company.
 
 ## Installing Or Moving A Skill
 
@@ -33,6 +33,16 @@ skills/<skill-name>/SKILL.md
 If the skill has `assets/`, `templates/`, `resources/`, or `examples/`, keep those files with the `SKILL.md`. They are part of the skill, not optional notes.
 
 Some CFO stack skills are source-only folders without a packaged `.skill` archive. Use their `skills/<skill-name>/SKILL.md` as the install source unless a packaged bundle is added later.
+
+## Using Sample Packs
+
+Use `sample-packs/koen-advisors-finance-data-pack/` for demo finance analysis, MFR, forensic investigation, cash review, or board-pack exercises.
+
+Use `sample-packs/koen-advisors-self-improving-finance-gdrive-starter/` when demonstrating the self-improving finance close loop with Google Drive-style folders and workpapers.
+
+Use the renamed archives in `sample-packs/packages/` when you need to move a complete sample pack into another workspace.
+
+Born2Cycle is the fictional company inside the sample data; Koen Advisors is the sample-pack publisher brand.
 
 ## Updating A Skill
 
@@ -75,7 +85,7 @@ Current package layouts:
 
 | Package | Rebuild pattern |
 | --- | --- |
-| `born2cycle-monthly-snapshot.skill` | root folder from `skills/born2cycle-monthly-snapshot/` |
+| `koen-advisors-sample-monthly-snapshot.skill` | root folder from `skills/koen-advisors-sample-monthly-snapshot/` |
 | `cash-flow-model-builder.skill` | root folder from `skills/cash-flow-model-builder/` |
 | `cash-reconciliation-reporting.skill` | root folder from `skills/cash-reconciliation-reporting/` |
 | `cfo-cash-dashboard.skill` | root folder from `skills/cfo-cash-dashboard/` |

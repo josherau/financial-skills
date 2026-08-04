@@ -1,0 +1,18 @@
+Rpt,Period,Store,Line Code,Line item,Apr actual,Apr budget,Mar actual,YTD actual,YTD budget,Currency,Comment
+P&L,2026-04,All,4000,Gross bike sales,3300000,3150000,3185000,12140000,11800000,USD,strong spring demand
+P&L,2026-04,All,4010,Gross e-bike sales,2580000,2350000,2425000,9340000,8600000,USD,Austin fleet sales
+P&L,2026-04,All,4020,Accessories sales,825000,760000,785000,2975000,2800000,USD,attachment rate improved
+P&L,2026-04,All,4030,Repairs & service revenue,710000,645000,640000,2520000,2370000,USD,Portland capacity improved
+P&L,2026-04,All,4040,Rentals / demo revenue,260000,275000,210000,805000,925000,USD,still behind plan YTD
+P&L,2026-04,All,4090,Returns and discounts,-335000,-285000,-315000,-1160000,-1050000,USD,promo cleanup continues
+P&L,2026-04,All,5000,Bike COGS,-2230000,-2160000,-2170000,-8320000,-8110000,USD,
+P&L,2026-04,All,5010,E-bike COGS,-1805000,-1600000,-1665000,-6395000,-5810000,USD,battery cost pressure
+P&L,2026-04,All,5020,Accessories COGS,-365000,-345000,-355000,-1350000,-1285000,USD,
+P&L,2026-04,All,5030,Service labor and parts,-292000,-282000,-275000,-1077000,-1032000,USD,overtime lower than March but still above budget
+P&L,2026-04,All,6000,Store payroll,-735000,-705000,-710000,-2145000,-2080000,USD,service staffing
+P&L,2026-04,All,6100,Marketing,-305000,-255000,-185000,-790000,-720000,USD,spring campaign shifted from March
+P&L,2026-04,All,6200,Rent and facilities,-255000,-255000,-255000,-765000,-765000,USD,
+P&L,2026-04,All,6300,G&A,-420000,-405000,-410000,-1230000,-1190000,USD,
+P&L,2026-04,All,7000,Depreciation and amortization,-125000,-120000,-120000,-365000,-355000,USD,
+P&L,2026-04,All,7100,Interest expense,-68000,-62000,-64000,-197000,-182000,USD,revolver balance remains elevated
+P&L,2026-04,All,9000,EBITDA,220000,250000,145000,585000,720000,USD,revenue beat but conversion below plan

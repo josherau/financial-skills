@@ -1,0 +1,17 @@
+vendor_id,vendor_name,category,standard_payment_terms,early_payment_discount,strategic_vendor_flag,notes
+V-2001,Shimano North America,Parts,Net 45,2% 10 net 45,Yes,Strategic parts supplier.
+V-2002,Trek Wholesale,Bikes,Net 30,1% 10 net 30,Yes,Largest bike supplier.
+V-2003,UrbanVolt E-Bikes,E-bikes,Net 30,1.5% 10 net 30,Yes,E-bike supplier; summer pre-buy program.
+V-2004,Pacific Components,Parts,Net 45,none,No,Parts supplier.
+V-2005,TrailWear Apparel Co.,Apparel,Net 30,2% 15 net 30,No,Apparel supplier.
+V-2006,GearBox Accessories,Accessories,Net 30,none,No,Accessories supplier.
+V-2007,Cascade Freight & 3PL,Shipping,Net 15,none,No,Fulfillment / shipping carrier.
+V-2008,Meta Platforms Ads,Marketing,Net 15,none,No,Paid social.
+V-2009,Google Ads,Marketing,Net 15,none,No,Search / shopping ads.
+V-2010,Gusto Payroll,Payroll,Immediate,none,No,Payroll processor.
+V-2011,Northwest Property Partners,Rent,Net 1,none,No,Store landlord (multi-site).
+V-2012,PacPower Utilities,Utilities,Net 20,none,No,Electric/gas utility.
+V-2013,Coverage Mutual Insurance,Insurance,Net 30,none,No,Liability/property insurer.
+V-2014,Stripe,Processor,Netted,none,No,Card processing (Online Direct).
+V-2015,Shopify Payments,Processor,Netted,none,No,Card processing (Online Direct).
+V-2016,Spokane Buildout LLC,Capex,Net 30,none,No,Spokane store contractor.

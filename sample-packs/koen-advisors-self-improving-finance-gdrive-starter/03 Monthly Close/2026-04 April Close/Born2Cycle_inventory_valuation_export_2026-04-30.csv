@@ -1,0 +1,11 @@
+SKU,Description,Category,Store/Warehouse,Qty on hand,Unit cost,Ext value,Last receipt date,Status,Ops note
+BIKE-RD-AL-54,Road bike aluminum 54cm,Traditional bike,Portland,92,850,78200,2026-04-07,Available,
+BIKE-MTB-CF-M,Carbon MTB medium,Traditional bike,Austin,44,1450,63800,2026-04-07,Available,
+EBIKE-URB-500,Urban e-bike 500W,E-bike,Portland,345,1420,489900,2026-04-02,Available,includes March in-transit receipt
+EBIKE-CARGO-750,Cargo e-bike 750W,E-bike,Austin,128,2250,288000,2026-04-07,Available,fleet demand but turns need review
+EBIKE-FOLD-350,Folding e-bike 350W,E-bike,Miami,158,980,154840,2026-04-10,Available,slow movement in Miami
+ACC-HELM-MIPS,MIPS helmet,Accessories,All,2100,42,88200,2026-04-09,Available,spring campaign
+ACC-LOCK-PRO,Pro lock,Accessories,All,2700,18,48600,2026-04-09,Available,
+PART-BATT-500,Replacement battery 500W,Service parts,Service center,470,310,145700,2026-04-22,Reserved,service capacity investment
+PART-BRAKE-KIT,Hydraulic brake kit,Service parts,Service center,650,39,25350,2026-04-18,Available,
+RESERVE-EB-APR,Inventory reserve - e-bike,Reserve,Corporate,1,-95000,-95000,2026-04-30,Reserve,slow-moving e-bike reserve estimate

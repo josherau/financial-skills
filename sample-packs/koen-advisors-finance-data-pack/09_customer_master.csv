@@ -1,0 +1,16 @@
+customer_id,customer_name,customer_type,default_payment_terms,prior_payment_terms,credit_limit,risk_rating,notes
+C-1001,Cascadia Health System,B2B - Healthcare,Net 90,Net 30,600000,Medium,Fleet and corporate wellness program. Terms updated Apr-2026 per procurement.
+C-1002,Pacific University Athletics,B2B - Education,Net 90,Net 30,400000,Medium,Annual athletics equipment order. Terms updated May-2026.
+C-1003,GreenFleet Logistics,B2B - Corporate,Net 90,Net 45,300000,Medium-High,E-bike last-mile delivery fleet account.
+C-1004,Northwest Municipal Transit,B2B - Government,Net 90,Net 60,500000,Low,Municipal account; purchase-order procurement cycle.
+C-1005,Alder Tech Campus,B2B - Corporate,Net 60,Net 30,250000,Medium,Commuter benefit program account.
+C-1006,Cascade School District,B2B - Education,Net 45,Net 45,200000,Low,School district account.
+C-1007,Summit Corporate Wellness,B2B - Corporate,Net 30,Net 30,120000,Low,Corporate wellness account.
+C-1008,Riverside Resort Group,B2B - Hospitality,Net 60,Net 45,150000,Medium,Seasonal resort rental-fleet account.
+R-IN,In-store Retail (walk-in),Retail,Immediate,Immediate,0,Low,Card/cash at point of sale.
+O-DIR,Online Direct Consumers,Retail,Card on order,Card on order,0,Low,Settled via Stripe/Shopify.
+M-AMZN,Amazon Marketplace Buyers,Marketplace,Platform settlement,Platform settlement,0,Low,Amazon platform settlement.
+M-WMT,Walmart Marketplace Buyers,Marketplace,Platform settlement,Platform settlement,0,Low,Walmart platform settlement.
+M-BACK,Backcountry Marketplace Buyers,Marketplace,Platform settlement,Platform settlement,0,Low,Backcountry platform settlement.
+S-SVC,Service & Repair Customers,Retail,On completion,On completion,0,Low,Card on completion.
+W-PLAN,Warranty Plan Holders,Retail,Prepaid,Prepaid,0,Low,Multi-year prepaid warranty plans.

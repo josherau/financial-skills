@@ -1,0 +1,12 @@
+Bank acct,Post date,Value date,Description,Debit,Credit,Running balance,Cleared in ERP?,Memo
+Operating ****4421,2026-04-01,2026-04-01,Opening balance,0,0,1455000,n/a,
+Operating ****4421,2026-04-03,2026-04-03,Stripe payout batch 04-02,0,525000,1980000,Y,
+Operating ****4421,2026-04-05,2026-04-05,ACH vendor Cascade Bike Components,395000,0,1585000,Y,
+Operating ****4421,2026-04-08,2026-04-08,Payroll funding,635000,0,950000,Y,
+Operating ****4421,2026-04-12,2026-04-12,Customer ACH Austin Mobility,0,590000,1540000,Y,fleet payment
+Operating ****4421,2026-04-14,2026-04-14,Marketing campaign payment,305000,0,1235000,Y,March campaign shifted to April
+Operating ****4421,2026-04-19,2026-04-19,Stripe payout batch 04-18,0,610000,1845000,Y,
+Operating ****4421,2026-04-22,2026-04-22,Vendor Shenzhen Battery Works,620000,0,1225000,N,battery cost pressure
+Operating ****4421,2026-04-26,2026-04-26,Revolver repayment,350000,0,875000,Y,partial repayment
+Operating ****4421,2026-04-28,2026-04-28,Customer ACH Portland State University,0,180000,1055000,Y,
+Operating ****4421,2026-04-30,2026-04-30,Closing balance,0,0,1055000,n/a,

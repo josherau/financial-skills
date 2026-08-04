@@ -6,7 +6,7 @@ This directory is the map for choosing and using the finance skills in this repo
 
 | Need | Use this skill | Why |
 | --- | --- | --- |
-| Governed monthly CFO snapshot for Born2Cycle | `born2cycle-monthly-snapshot` | Fixed-design Finstory-powered HTML snapshot with KPIs, trends, bridge, liquidity, working capital, CCC, entity mix, and cost-of-sales variance. |
+| Governed Koen Advisors sample monthly CFO snapshot | `koen-advisors-sample-monthly-snapshot` | Fixed-design Finstory-powered HTML snapshot for the Born2Cycle demo company with KPIs, trends, bridge, liquidity, working capital, CCC, entity mix, and cost-of-sales variance. |
 | First-pass 13-week cash forecast | `cash-flow-model-builder` | Builds a simple Week 0 Excel model from messy finance exports without overbuilding a full audit trail or scenario engine. |
 | Controlled bank-to-ERP cash reconciliation | `cash-reconciliation-reporting` | Normalizes cash data, reconciles by entity/account/consolidated, forces AR/AP/source-system sweep, investigates anomalies, and produces a CFO-ready reconciliation pack. |
 | Board, investor, lender, or audit committee prep | `cfo-board-prep` | Predicts director questions, builds evidence-backed answers, finds missing support, drafts opening narratives, reviews board packs, and creates pre-board risk registers. |
@@ -19,24 +19,34 @@ This directory is the map for choosing and using the finance skills in this repo
 | CFO audit trail | `cfo-audit-trail` | Defensible output logs, source trails, confidence grades, and review rationale. |
 | CFO quality gate | `cfo-quality-gate` | Evaluation layer for finance outputs and proposed learning before CFO approval. |
 
+## Sample Packs
+
+| Need | Use this sample pack | Why |
+| --- | --- | --- |
+| Demo data for MFR, cash investigation, board-pack review, or forensic finance analysis | `sample-packs/koen-advisors-finance-data-pack/` | May 2026 CSV and markdown pack for the fictional Born2Cycle company, including P&L, balance sheet, cash forecast, AR/AP aging, bank transactions, sales, customers, vendors, inventory, refunds, processor settlements, and board commentary. |
+| Starter Google Drive-style structure for the self-improving finance loop | `sample-packs/koen-advisors-self-improving-finance-gdrive-starter/` | Company context, monthly close evidence, controller notes, quality gate notes, process documentation, and learning templates for demonstrating governed finance memory. |
+| Portable sample pack archives | `sample-packs/packages/` | Renamed zip archives for moving the sample packs into another workspace. |
+
+Born2Cycle remains the fictional demo company inside the sample data. Koen Advisors is the repo-facing sample-pack brand.
+
 ## Skill Details
 
-### `born2cycle-monthly-snapshot`
+### `koen-advisors-sample-monthly-snapshot`
 
-**Path:** `skills/born2cycle-monthly-snapshot/`
+**Path:** `skills/koen-advisors-sample-monthly-snapshot/`
 
-**Packaged file:** `packages/born2cycle-monthly-snapshot.skill`
+**Packaged file:** `packages/koen-advisors-sample-monthly-snapshot.skill`
 
-**Use when:** The user asks for the Born2Cycle CFO monthly snapshot, monthly finance snapshot, month-end report, or a snapshot for a named month/year.
+**Use when:** The user asks for the Koen Advisors sample CFO monthly snapshot, monthly finance snapshot, month-end report, or a snapshot for a named month/year using the Born2Cycle demo company.
 
 **Primary inputs:**
 
-- Finstory data-analysis connector access for Born2Cycle
+- Finstory data-analysis connector access for the Born2Cycle demo tenant
 - Reporting period from the user or Finstory `defaultPov`
 - Required year and period members
 - Required KPI library members
 
-**Primary output:** A single-page HTML report named like `Born2Cycle_Monthly_Snapshot_May_2026.html`.
+**Primary output:** A single-page HTML report named like `Koen_Advisors_Sample_Monthly_Snapshot_May_2026.html`.
 
 **Supporting files:**
 
@@ -372,7 +382,7 @@ Existing package root layouts:
 
 | Package | Archive layout to preserve |
 | --- | --- |
-| `born2cycle-monthly-snapshot.skill` | root folder `born2cycle-monthly-snapshot/` |
+| `koen-advisors-sample-monthly-snapshot.skill` | root folder `koen-advisors-sample-monthly-snapshot/` |
 | `cash-flow-model-builder.skill` | root folder `cash-flow-model-builder/` |
 | `cash-reconciliation-reporting.skill` | root folder `cash-reconciliation-reporting/` |
 | `cfo-cash-dashboard.skill` | root folder `cfo-cash-dashboard/` |

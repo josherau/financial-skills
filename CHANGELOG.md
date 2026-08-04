@@ -10,3 +10,6 @@
 - Added standalone CFO stack skill folders: `cfo-board-prep`, `cfo-brain`, `cfo-memory`, `cfo-audit-trail`, and `cfo-quality-gate`.
 - Normalized standalone `cfo-brain` and `cfo-audit-trail` frontmatter/export artifacts while preserving original pack copies.
 - Added repository overview, usage guide, and skill directory.
+- Renamed the Born2Cycle monthly snapshot skill as `koen-advisors-sample-monthly-snapshot` and rebuilt its `.skill` package with the new root folder.
+- Added Koen Advisors sample packs under `sample-packs/`, including a May 2026 finance data pack and a self-improving finance Google Drive starter pack.
+- Added renamed zip archives for both sample packs under `sample-packs/packages/`.

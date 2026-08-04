@@ -1,0 +1,13 @@
+account_code,account_name,balance_apr_30_2026,balance_may_31_2026,movement,commentary_hint
+1000,Cash & cash equivalents,1850000.0,665000.0,-1185000.0,Decrease vs prior month.
+1100,Accounts receivable,2250000.0,3180000.0,930000.0,Increase vs prior month.
+1200,Inventory,4100000.0,4820000.0,720000.0,Increase vs prior month.
+1300,Prepaid expenses,320000.0,345000.0,25000.0,Minor change.
+1500,"Fixed assets, net",2600000.0,2720000.0,120000.0,Capital additions in month.
+2000,Accounts payable,2380000.0,2210000.0,-170000.0,Decrease vs prior month.
+2100,Accrued expenses,540000.0,565000.0,25000.0,Minor change.
+2200,Deferred revenue (warranty plans),410000.0,470000.0,60000.0,Increase vs prior month.
+2300,Customer refund liability,95000.0,188000.0,93000.0,Increase vs prior month.
+2400,Payment processor reserve,60000.0,165000.0,105000.0,Increase vs prior month.
+2500,Revolving line of credit / debt,3000000.0,3250000.0,250000.0,Revolver balance increased.
+3000,Total equity,4635000.0,4882000.0,247000.0,Balancing figure; reflects net income.
