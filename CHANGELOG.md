@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-28
+
+- Added `cfos-client-adapt` skill source and `.skill` package for installing the CFOS 8-step system at a client.
+
 ## 2026-08-04
 
 - Prepared initial repository contents for the financial skills library.
