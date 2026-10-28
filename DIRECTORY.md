@@ -9,6 +9,7 @@ This directory is the map for choosing and using the finance skills in this repo
 | Governed Koen Advisors sample monthly CFO snapshot | `koen-advisors-sample-monthly-snapshot` | Fixed-design Finstory-powered HTML snapshot for the Born2Cycle demo company with KPIs, trends, bridge, liquidity, working capital, CCC, entity mix, and cost-of-sales variance. |
 | First-pass 13-week cash forecast | `cash-flow-model-builder` | Builds a simple Week 0 Excel model from messy finance exports without overbuilding a full audit trail or scenario engine. |
 | Install the CFOS construction financial system at a client | `cfos-client-adapt` | Runs intake and a fit test, classifies the business model (contract, recurring route, demand service), adapts the 8 CFOS steps, flags known template conflicts, and writes an install plan. |
+| Install a financial operating system at an independent insurance agency | `insurance-agency-adapt` | CFOS-style install for P&C, benefits and life agencies: comp ratio, pro forma EBITDA, producer validation, premium trust reconciliation, contingent commission accrual, organic growth and Rule of 20. |
 | Controlled bank-to-ERP cash reconciliation | `cash-reconciliation-reporting` | Normalizes cash data, reconciles by entity/account/consolidated, forces AR/AP/source-system sweep, investigates anomalies, and produces a CFO-ready reconciliation pack. |
 | Board, investor, lender, or audit committee prep | `cfo-board-prep` | Predicts director questions, builds evidence-backed answers, finds missing support, drafts opening narratives, reviews board packs, and creates pre-board risk registers. |
 | Executive dashboard from a completed cash rec | `cfo-cash-dashboard` | Uses the reconciliation pack as source of truth and turns reconciled data into cash position, movement, exception, driver, and AR/AP visuals. |
@@ -100,7 +101,7 @@ Born2Cycle remains the fictional demo company inside the sample data. Koen Advis
 - Equipment and vehicle list, payroll register by role, price list or recent quotes
 - Debt schedule, software in use, seasonality and payment terms
 
-**Primary output:** A fit assessment, a client install plan (Claude Doc), and adapted templates for cost codes, equipment rates, overhead rate and pricing targets.
+**Primary output:** A fit assessment, a client install plan (Claude Doc), and adapted templates for cost codes, equipment rates, overhead rate and pricing targets. Rules follow the CONTROL book (Luebker and Bohrer) and runoncfos.com, with known template conflicts listed.
 
 **Supporting files:** None bundled. The CFOS workbooks come from the CFOS program.
 
@@ -110,6 +111,31 @@ Born2Cycle remains the fictional demo company inside the sample data. Koen Advis
 - Never run the CFOS CEO Report `--contribute` step for firm clients.
 - Leave revenue recognition, tax, and lien deadlines to the client's CPA and counsel.
 - List missing data as missing; never fill gaps with plausible figures.
+
+### `insurance-agency-adapt`
+
+**Path:** `skills/insurance-agency-adapt/`
+
+**Packaged file:** `packages/insurance-agency-adapt.skill`
+
+**Use when:** Installing a monthly financial operating system at an independent insurance agency or brokerage (P&C, benefits, life).
+
+**Primary inputs:**
+
+- 13 months of monthly P&L and balance sheet
+- Revenue by line, carrier, producer, and new versus renewal
+- Commission statements (direct bill and agency bill) and 3 years of contingent commissions
+- Payroll register by role with the comp plan, premium trust bank statements, retention history, renewal calendar
+
+**Primary output:** An agency profile and fit assessment, an install plan (Claude Doc), and workpapers for the book-of-business P&L, comp ratio, producer economics, trust reconciliation and a renewal-driven cash forecast.
+
+**Supporting files:** None bundled.
+
+**Critical controls:**
+
+- Benchmarks come only from the Big "I" / Reagan Best Practices Study, which covers top-performing agencies; say so in every comparison.
+- Trust-account rules, ASC 606 policy, contingent accrual method, producer classification and book ownership go to the agency's CPA and counsel.
+- List missing data as missing.
 
 ### `cash-reconciliation-reporting`
 
@@ -412,6 +438,7 @@ Existing package root layouts:
 | `koen-advisors-sample-monthly-snapshot.skill` | root folder `koen-advisors-sample-monthly-snapshot/` |
 | `cash-flow-model-builder.skill` | root folder `cash-flow-model-builder/` |
 | `cfos-client-adapt.skill` | root folder `cfos-client-adapt/` |
+| `insurance-agency-adapt.skill` | root folder `insurance-agency-adapt/` |
 | `cash-reconciliation-reporting.skill` | root folder `cash-reconciliation-reporting/` |
 | `cfo-cash-dashboard.skill` | root folder `cfo-cash-dashboard/` |
 | `forensic-finance-investigation.skill` | rootless `SKILL.md` |

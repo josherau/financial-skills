@@ -3,6 +3,8 @@
 ## 2026-10-28
 
 - Added `cfos-client-adapt` skill source and `.skill` package for installing the CFOS 8-step system at a client.
+- Updated `cfos-client-adapt` with rules from the CONTROL book: seven cost categories and three levels, equipment inputs, eight overhead categories and two methods, alignment meetings, the 30-second job-cost test, default PM standards, the monthly order, CEO report and WIP rules, and four new template conflicts.
+- Added `insurance-agency-adapt` skill source and `.skill` package.
 
 ## 2026-08-04
 

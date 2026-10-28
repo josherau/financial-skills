@@ -35,6 +35,7 @@ financial-skills/
     ├── cfo-quality-gate/
     ├── cfos-client-adapt/
     ├── forensic-finance-investigation/
+    ├── insurance-agency-adapt/
     ├── koen-advisors-sample-monthly-snapshot/
     ├── monthly-financial-review/
     └── self-improving-finance-skill-pack/
@@ -53,6 +54,7 @@ financial-skills/
 | `cfo-audit-trail` | Defensible audit trail entries for material CFO outputs. |
 | `cfo-quality-gate` | Evaluation layer for outputs and proposed learning candidates. |
 | `cfos-client-adapt` | Adapt and install the CFOS 8-step construction financial system at a client, including field-service businesses. |
+| `insurance-agency-adapt` | Install a CFOS-style financial operating system at an independent insurance agency. |
 | `forensic-finance-investigation` | Investigate finance packs where the reported story and cash reality do not line up. |
 | `koen-advisors-sample-monthly-snapshot` | Generate the governed Koen Advisors sample CFO monthly snapshot for the Born2Cycle demo company. |
 | `monthly-financial-review` | Run a guided monthly financial review and build an HTML dashboard deck. |
